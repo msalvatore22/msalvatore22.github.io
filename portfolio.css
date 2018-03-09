@@ -1,0 +1,112 @@
+/*--- Colors ---*/
+
+	F1F0EA
+	FCBA04
+	D95945
+	FFF9E2
+
+
+/*--- -----------*/
+
+
+html,
+body {
+	font-family: 'Josefin Sans', sans-serif;
+	color: #F1F0EA;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	letter-spacing: 2px;
+	margin: 0;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(rohit-tandon-411851-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;	
+	background-position: top;	
+}
+
+
+div {
+	padding: 360px;
+}
+
+
+header {
+	position: absolute;
+	background-color: none;
+	margin-top: 40px;
+	height: 55px;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+/*--- Main Nav ----*/
+
+
+.main-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	list-style: none;
+
+}
+
+.main-nav li {
+	display: inline-block;
+	margin: 0 5%;
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: #FCBA04;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #FCBA04;
+	transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #D95945;
+    border-bottom: 1px solid transparent; 
+}
+
+
+/*--- Welcome Text ----*/
+
+
+
+.greeting {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#hello {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+
+
+#codeLang {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 150%;
+}
+
+
+/*--- About ----*/
+
+
+#about {
+	background-color: #F1F0EA;
+	height: 100vh;
+	margin: 0;
+}
+
