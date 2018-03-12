@@ -22,13 +22,13 @@ body {
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;	
-	background-position: top;	
+	background-position: top;
+
 }
 
 
-div {
-	padding: 360px;
-}
+
+
 
 
 header {
@@ -39,6 +39,25 @@ header {
 	width: 100%;
 	overflow: hidden;
 }
+
+
+/*--- Links ---*/
+
+a:link,
+a:visited {
+    color: #FCBA04;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #FCBA04;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+    color: #FCBA04;
+    border-bottom: 1px solid transparent; 
+}
+
 
 
 /*--- Main Nav ----*/
@@ -57,8 +76,8 @@ header {
 	margin: 0 5%;
 }
 
-a:link,
-a:visited {
+.nav-btn:link,
+.nav-btn:visited {
 	text-decoration: none;
 	color: #FCBA04;
 	padding-bottom: 5px;
@@ -66,11 +85,12 @@ a:visited {
 	transition: border-bottom 0.2s, color 0.2s;
 }
 
-a:hover,
-a:active {
+.nav-btn:hover,
+.nav-btn:active {
     color: #D95945;
     border-bottom: 1px solid transparent; 
 }
+
 
 
 /*--- Welcome Text ----*/
@@ -81,24 +101,19 @@ a:active {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 360px;
 }
 
 
-#hello {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-
-}
-
-
-
-#codeLang {
+.codeLang {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-size: 150%;
 }
+
+
+
 
 
 /*--- About ----*/
@@ -110,3 +125,111 @@ a:active {
 	margin: 0;
 }
 
+/*--- About ----*/
+
+
+#projects {
+	background-color: #D95945;
+	height: 100vh;
+	margin: 0;
+}
+
+/*--- contact ----*/
+
+
+#contact {
+	background-color: #F1F0EA;
+	height: 100vh;
+	margin: 0;
+}
+
+
+
+
+
+/* Big tablet to 1200px  */
+@media (max-width: 1200px) {
+	.greeting {
+		padding: 360px;
+	}
+}
+/* Small tablet to big tablet: from 768px to 1024px */
+@media (max-width: 1024px) {
+		.greeting {
+			padding: 630px;
+		}
+}
+/* Small phones to small tablets: from 481px to 767px */
+@media (max-width: 767px) {
+
+	.greeting {
+		padding:360px;
+	}
+
+}
+
+/* Small phones: from 0 to 480px */
+
+
+@media (max-width: 480px) {
+	.greeting {
+		padding: 360px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---
+
+
+
+.projects-btn {
+	padding: 10px;
+	font-weight: 300;
+	text-decoration: none;
+	border-radius: 200px;
+	color: #FCBA04;
+	border: 1px solid #FCBA04;
+	transition: border 0.2s, color 0.2s;
+
+}
+
+
+.projects-btn:link,
+.projects-btn:visted {
+	padding: 10px;
+
+	font-weight: 300;
+	text-decoration: none;
+	background-color: #FCBA04;
+	border-radius: 200px;
+	color: #FCBA04;
+	border: 1px solid #FCBA04;
+	transition: border 0.2s, color 0.2s;
+
+}
+
+
+.projects-btn:hover,
+.projects-btn:active {
+    color: #D95945;
+    border-radius: 200px;
+    background-color: #FCBA04; 
+    border: 1px solid #D95945;
+    padding: 10px;
+}
+
+----*/
