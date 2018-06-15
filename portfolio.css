@@ -58,7 +58,7 @@ a:active {
 
 .main-nav li {
 	display: inline-block;
-	margin: 0 5%;
+	margin: 0 10px 0 0;
 }
 
 .nav-btn:link,
@@ -120,10 +120,17 @@ a:active {
 	background-size: cover;	
 	background-position: top;
 	margin: 0;
+	height: 1100px;
 }
 
-.card {
-	margin: 500px 0;
+.set1 {
+	margin: 150px 0 0 0;
+	width: 32rem;
+}
+
+.set2 {
+	margin: 50px 0;
+	width: 32rem;
 }
 
 /*--- contact ----*/
