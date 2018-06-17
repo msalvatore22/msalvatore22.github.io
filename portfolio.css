@@ -29,20 +29,10 @@ body {
 
 /*--- Links ---*/
 
-a:link,
-a:visited {
-    color: #FCBA04;
-    text-decoration: none;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #FCBA04;
-    transition: border-bottom 0.2s, color 0.2s;
+a {
+	text-decoration: none;
 }
 
-a:hover,
-a:active {
-    color: #FCBA04;
-    border-bottom: 1px solid transparent; 
-}
 
 
 
@@ -58,35 +48,33 @@ a:active {
 
 .main-nav li {
 	display: inline-block;
-	margin: 0 10px 0 0;
+	margin: 40px 30px 0 0;
 }
 
 .nav-btn:link,
 .nav-btn:visited {
-	text-decoration: none;
 	color: #FCBA04;
-	padding-bottom: 5px;
-	border-bottom: 1px solid #FCBA04;
-	transition: border-bottom 0.2s, color 0.2s;
 }
 
 .nav-btn:hover,
 .nav-btn:active {
-    color: #D95945;
-    border-bottom: 1px solid transparent; 
+		text-decoration: none;
+    color: black;
 }
 
 
 
 /*--- Welcome Text ----*/
 
-
+.name {
+	margin: 0 0 40px 0;
+}
 
 .greeting {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 400px;
+	padding: 385px;
 }
 
 
@@ -120,19 +108,26 @@ a:active {
 	background-size: cover;	
 	background-position: top;
 	margin: 0;
-	height: 1100px;
+	height: 1200px;
 }
 
 .set1 {
-	margin: 150px 0 0 0;
+	margin: 100px 0 0 0;
 	width: 32rem;
 }
 
 .set2 {
-	margin: 50px 0;
+	margin: 40px 0;
 	width: 32rem;
 }
 
+.card-content {
+	margin: 10px 0;
+}
+
+.card-action {
+	margin-bottom: 20px;
+}
 /*--- contact ----*/
 
 
