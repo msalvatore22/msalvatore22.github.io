@@ -17,6 +17,11 @@ body {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	letter-spacing: 2px;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/rohit-tandon-411851-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;	
+	background-position: top;
 	margin: 0;
 }
 
@@ -144,9 +149,6 @@ a {
 /* Small phones to small tablets: from 481px to 767px */
 @media (max-width: 767px) {
 
-	.greeting {
-		/* padding:360px; */
-	}
 
 }
 
@@ -154,8 +156,12 @@ a {
 
 
 @media (max-width: 480px) {
-	.greeting {
-		/* padding: 360px; */
+	#projects {
+		height: 1200px;
+	}
+
+	#home {
+		height: 1200px;
 	}
 }
 
