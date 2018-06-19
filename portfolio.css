@@ -18,12 +18,6 @@ body {
 	text-rendering: optimizeLegibility;
 	letter-spacing: 2px;
 	margin: 0;
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/rohit-tandon-411851-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;	
-	background-position: top;
-
 }
 
 
@@ -34,7 +28,17 @@ a {
 }
 
 
+/*--- Home ---*/
 
+#home {
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/rohit-tandon-411851-unsplash.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;	
+	background-position: top;
+	margin: 0;
+	height: 1000px;
+}
 
 /*--- Main Nav ----*/
 
@@ -44,11 +48,12 @@ a {
 	flex-direction: row;
 	justify-content: center;
 	list-style: none;
+	padding: 0;
 }
 
 .main-nav li {
 	display: inline-block;
-	margin: 40px 30px 0 0;
+	margin: 40px 20px;
 }
 
 .nav-btn:link,
@@ -67,14 +72,17 @@ a {
 /*--- Welcome Text ----*/
 
 .name {
-	margin: 0 0 40px 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 260px;
+	margin-bottom: 20px;
 }
 
 .greeting {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 385px;
 }
 
 
@@ -86,19 +94,7 @@ a {
 }
 
 
-
-
-
-/*--- About ----*/
-
-
-#about {
-	background-color: #F1F0EA;
-	height: 100vh;
-	margin: 0;
-}
-
-/*--- About ----*/
+/*--- Projects ---*/
 
 
 #projects {
@@ -136,20 +132,20 @@ a {
 /* Big tablet to 1200px  */
 @media (max-width: 1200px) {
 	.greeting {
-		padding: 360px;
+		/* padding: 360px; */
 	}
 }
 /* Small tablet to big tablet: from 768px to 1024px */
 @media (max-width: 1024px) {
 		.greeting {
-			padding: 360px;
+			/* padding: 360px; */
 		}
 }
 /* Small phones to small tablets: from 481px to 767px */
 @media (max-width: 767px) {
 
 	.greeting {
-		padding:360px;
+		/* padding:360px; */
 	}
 
 }
@@ -159,7 +155,7 @@ a {
 
 @media (max-width: 480px) {
 	.greeting {
-		padding: 360px;
+		/* padding: 360px; */
 	}
 }
 
