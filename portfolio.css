@@ -9,6 +9,7 @@
 /*--- -----------*/
 
 
+
 html,
 body {
 	font-family: 'Josefin Sans', sans-serif;
@@ -17,11 +18,6 @@ body {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	letter-spacing: 2px;
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/rohit-tandon-411851-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;	
-	background-position: top;
 	margin: 0;
 }
 
@@ -35,12 +31,10 @@ a {
 
 /*--- Home ---*/
 
-#home {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/rohit-tandon-411851-unsplash.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;	
-	background-position: top;
+
+
+#particles-js {
+	background-color: #D95945;
 	margin: 0;
 	height: 1000px;
 }
@@ -103,11 +97,6 @@ a {
 
 
 #projects {
-	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/flipped.jpg);
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;	
-	background-position: top;
 	margin: 0;
 	height: 1200px;
 }
@@ -129,6 +118,8 @@ a {
 .card-action {
 	margin-bottom: 20px;
 }
+
+
 /*--- contact ----*/
 
 
