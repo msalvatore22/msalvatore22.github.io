@@ -34,7 +34,7 @@ a {
 #particles-js {
 	background-color: black;
 	margin: 0;
-	height: 1000px;
+	height: 960px;
 	width: 100%;
 }
 
@@ -72,14 +72,18 @@ a {
 	font-size: 150%;
 }
 
-
-/*--- Projects ---*/
-.container {
-	position: relative;
+.name {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
 }
 
-.row {
+
+/*--- Projects ---*/
+.parent {
 	position: absolute;
+	width: 100%;
 }
 
 #bio {
@@ -101,7 +105,7 @@ a {
 }
 
 .col-sm {
-	margin-top: 400px;
+	margin-top: 100px;
 }
 /*--- contact ----*/
 
