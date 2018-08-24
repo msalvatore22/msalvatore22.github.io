@@ -31,13 +31,19 @@ a {
 
 /*--- Home ---*/
 
-
-
 #particles-js {
 	background-color: black;
 	margin: 0;
 	height: 1000px;
+	width: 100%;
 }
+
+#particle-js > canvas {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+}
+
 
 /*--- Main Nav ----*/
 
@@ -55,35 +61,7 @@ a {
 	margin: 40px 20px;
 }
 
-.nav-btn:link,
-.nav-btn:visited {
-	color: #FCBA04;
-}
-
-.nav-btn:hover,
-.nav-btn:active {
-		text-decoration: none;
-    color: black;
-}
-
-
-
 /*--- Welcome Text ----*/
-
-.name {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 260px;
-	margin-bottom: 20px;
-}
-
-.greeting {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
 
 .codeLang {
 	display: flex;
@@ -94,21 +72,17 @@ a {
 
 
 /*--- Projects ---*/
+.container {
+	position: relative;
+}
 
+.row {
+	position: absolute;
+}
 
-#projects {
+#bio {
 	margin: 0;
 	height: 1200px;
-}
-
-.set1 {
-	margin: 100px 0 0 0;
-	width: 32rem;
-}
-
-.set2 {
-	margin: 40px 0;
-	width: 32rem;
 }
 
 .card-content {
@@ -119,7 +93,14 @@ a {
 	margin-bottom: 20px;
 }
 
+.card {
+	max-width: 18rem;
+	position: absolute;
+}
 
+.col-sm {
+	margin-top: 200px;
+}
 /*--- contact ----*/
 
 
