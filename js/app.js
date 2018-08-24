@@ -12,7 +12,7 @@ particlesJS('particles-js',
 {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 22,
       "density": {
         "enable": true,
         "value_area": 800
@@ -31,9 +31,9 @@ particlesJS('particles-js',
         "nb_sides": 6
       },
       "image": {
-        "src": "images/lightsabersMed.png",
-        "width": 100,
-        "height": 100
+        "src": "images/x-wing.png",
+        "width": 150,
+        "height": 50
       }
     },
     "opacity": {
@@ -41,26 +41,26 @@ particlesJS('particles-js',
       "random": false,
       "anim": {
         "enable": false,
-        "speed": 1,
+        "speed": 10,
         "opacity_min": 0.1,
         "sync": false
       }
     },
     "size": {
-      "value": 10,
+      "value": 20,
       "random": true,
       "anim": {
         "enable": true,
-        "speed": 10,
-        "size_min": 4,
+        "speed": 6,
+        "size_min": 10,
         "sync": true
       }
     },
     "line_linked": {
       "enable": true,
       "distance": 300,
-      "color": "#81d4fa",
-      "opacity": 0.2,
+      "color": "#B83F39",
+      "opacity": 0.3,
       "width": 2
     },
     "move": {
@@ -107,7 +107,7 @@ particlesJS('particles-js',
         "speed": 4
       },
       "repulse": {
-        "distance": 100,
+        "distance": 200,
         "duration": 0.8
       },
       "push": {

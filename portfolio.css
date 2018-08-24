@@ -11,17 +11,18 @@
 
 
 html {
-	font-family: 'Josefin Sans', sans-serif;
 	color: #F1F0EA;
 	font-weight: 300;
-	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	letter-spacing: 2px;
 	margin: 0;
+	padding: 0;
 }
 
 body {
 	margin: 0;
+	padding: 0;
+	height: 100%;
 }
 
 
@@ -38,7 +39,7 @@ a {
 	margin: 0;
 	height: 960px;
 	width: 100%;
-	background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(images/space.png) no-repeat center center fixed;
+	background-color: #4F6D7A;
 	background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -52,7 +53,46 @@ a {
 	z-index: 1;
 }
 
+.parent {
+	position: absolute;
+	width: 100%;
+	min-height: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
+/*--- Welcome Text ----*/
+
+.codeLang {
+	font-family: 'Amaranth', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 50px;
+	z-index: 999;
+}
+
+.name {
+	font-family: 'Amaranth', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 100px;
+	margin-top: 50px;
+	z-index: 999;
+}
+
+.coding-icons {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.code-icon {
+	margin: 20px;
+}
 
 /*--- Main Nav ----*/
 
@@ -74,30 +114,11 @@ a {
 
 
 
-/*--- Welcome Text ----*/
 
-.codeLang {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	font-size: 150%;
-	z-index: 999;
-}
-
-.name {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
-	z-index: 999;
-}
 
 
 /*--- Projects ---*/
-.parent {
-	position: absolute;
-	width: 100%;
-}
+
 
 #bio {
 	margin: 0;
