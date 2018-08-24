@@ -25,6 +25,10 @@ body {
 	height: 100%;
 }
 
+.row {
+	margin: 0;
+	padding: 0;
+}
 
 /*--- Links ---*/
 
@@ -37,9 +41,10 @@ a {
 
 #particles-js {
 	margin: 0;
-	height: 960px;
+	min-height: 100%;
+	min-height: 100vh;
 	width: 100%;
-	background-color: #4F6D7A;
+	background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(images/space.png) no-repeat center center fixed;
 	background-size: cover;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -71,6 +76,7 @@ a {
 	flex-direction: column;
 	align-items: center;
 	font-size: 50px;
+	margin: 20px 0 0 0;	
 	z-index: 999;
 }
 
@@ -91,7 +97,7 @@ a {
 }
 
 .code-icon {
-	margin: 20px;
+	margin: 36px;
 }
 
 /*--- Main Nav ----*/
@@ -113,17 +119,24 @@ a {
 }
 
 
-
-
-
-
 /*--- Projects ---*/
 
 
-#bio {
+#projects {
 	margin: 0;
-	height: 1200px;
+	padding: 0;
+	min-height: 100%;
+	min-height: 100vh;
+	background-color: #3e4a4d;
 }
+
+.laptop {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	padding-top: 200px;
+}
+
 
 .card-content {
 	margin: 10px 0;
