@@ -2,7 +2,6 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300" rel="stylesheet">
 	<link rel="icon" href="images/logo.png" type="image" sizes="16x16">
 	<title>Michael Salvatore</title>
@@ -11,81 +10,91 @@
 
 <body>
 	<div class="home">
-		<div class="row">
-			<div class="col-12">
-				<h1 class="text-white name">Michael Salvatore</h1>
-				<h1 class="text-white codeLang">Web Developer</h1>
-				<div class="coding-icons">
-					<img class="code-icon" src="images/javascript.png">
-					<img class="code-icon" src="images/react.png">
-					<img class="code-icon" src="images/node-logo.png">
-					<img class="code-icon" src="images/postgres.png">
-					<img class="code-icon" src="images/ruby.png">
-				</div>
-				<ul class="main-nav">
-					<li><button class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn">Projects</button></li>
-					<li><a class="btn btn-outline-light btn-rounded btn-sm my-0" href="https://www.linkedin.com/in/msalvatore22/" target="_blank">LinkedIn</a></li>
-					<li><a class="btn btn-outline-light btn-rounded btn-sm my-0" href="https://github.com/msalvatore22/" target="_blank">Github</a></li>
-				</ul>
+		<h1 class="name">Michael <br> Salvatore <span></span></h1>
+		<!-- <h1 class="codeLang">Web Developer</h1> -->
+		<div class="coding-icons">
+			<img class="code-icon" src="images/javascript-white.png" onmouseover="this.src='images/javascript.png';" onmouseout="this.src='images/javascript-white.png';">
+			<img class="code-icon" src="images/react-white.png" onmouseover="this.src='images/react.png';" onmouseout="this.src='images/react-white.png';">
+			<img class="code-icon" src="images/node-logo-white.png" onmouseover="this.src='images/node.png';" onmouseout="this.src='images/node-logo-white.png';">
+			<img class="code-icon" src="images/postgres-white.png" onmouseover="this.src='images/postgres.png';" onmouseout="this.src='images/postgres-white.png';">
+			<img class="code-icon" src="images/ruby-white.png" onmouseover="this.src='images/ruby.png';" onmouseout="this.src='images/ruby-white.png';">
+		</div>
+		<ul class="main-nav">
+			<!-- <li><button class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn">Projects</button></li> -->
+			<li><a class="btn btn-outline-light btn-rounded btn-sm my-0" href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><img src="images/linkedin-white.png" alt="" onmouseover="this.src='images/linkedin.png';" onmouseout="this.src='images/linkedin-white.png';"></a></li>
+			<li><a class="btn btn-outline-light btn-rounded btn-sm my-0" href="https://github.com/msalvatore22/" target="_blank"><img src="images/github-white.png" alt="" onmouseover="this.src='images/github.png';" onmouseout="this.src='images/github-white.png';"></a></li>
+		</ul>
+	</div>
+
+	<div id="projects">
+		<div class="slides">
+			<iframe class="embed-responsive-item slide-image" src="images/349d284b3f4b450a876f57f6bd78a751.mp4"></iframe>
+			<div class="slide-content">
+				<h2>College Cost Calculator</h2>
+				<a href="http://college-cost-calculator.herokuapp.com/" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
 			</div>
 		</div>
+		<div class="slides">
+			<iframe class="embed-responsive-item slide-image" src="images/37e3ae1a01d144b5babc318d1cf43669.mp4"></iframe>
+			<div class="slide-content">
+				<h2>Star Wars Tumblr</h2>
+				<p>Login as Darth Vader! Username: Darth Vader Password: vader</p>
+				<a href="https://star-wars-tumblr.herokuapp.com/" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img class="slide-image" src="images/adulting.png">
+			<div class="slide-content">
+			<h2>Adulting App</h2>
+				<p>Username: newuser Password: new123</p>
+				<a href="https://adulting-app.herokuapp.com/users/sign_in" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
+			</div>
+		</div>
+		<div class="slides">
+			<img class="slide-image" src="images/admin-panel.png">
+			<div class="slide-content">
+				<h2>School Tools Admin Panel</h2>
+				<a href="https://school-tools.herokuapp.com/" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
+			</div>
+		</div>
+
+		<div class="arrow1">
+			<button class="arrow-btn" onclick="plusDivs(-1)"><img class="arrow" src="images/left-arrow.png"></button>
+		</div>
+		<div class="arrow2">
+			<button class="arrow-btn" onclick="plusDivs(1)"><img src="images/right arrow.png"></button>
+		</div>
 	</div>
-	<div id="projects">
-		<div class="row">
-			<div class="col-12">
-				<span>
-					<button class="arrow-btn" onclick="plusDivs(-1)"><img src="images/left-arrow.png"></button>
-				</span>
-				<span>
-					<button class="arrow-btn" onclick="plusDivs(+1)"><img src="images/right arrow.png"></button>
-				</span>
-				<div class="slides">
-					<iframe class="embed-responsive-item slide-image" src="images/349d284b3f4b450a876f57f6bd78a751.mp4"></iframe>
-					<div class="slide-content">
-						<h5>College Cost Calculator</h5>
-						<a href="http://college-cost-calculator.herokuapp.com/" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
-					</div>
+
+	<div class="about">
+		<div>
+			<img class="michael" src="images/linkedInphoto.jpeg" alt="">
+		</div>
+		<div>
+			<h2>Michael is a web developer currently living in New York City.</h2>
+		</div>
+		<div class="about-main">
+			<div class="about-icons">
+				<img src="images/work.png" alt="">
+				<div class="about-content">
+					<p>I build web applications with clean design and intuitive user interfaces. When building an app, I make my best effort to confrom to RESTful practices.</p>
 				</div>
-				<div class="slides">
-					<iframe class="embed-responsive-item slide-image" src="images/37e3ae1a01d144b5babc318d1cf43669.mp4"></iframe>
-					<div class="slide-content">
-						<h5>Star Wars Tumblr</h5>
-						<p>Login as Darth Vader! Username: Darth Vader Password: vader</p>
-						<a href="https://star-wars-tumblr.herokuapp.com/" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
-					</div>
+			</div>
+			<div class="about-icons">
+				<img src="images/bike.png" alt="">
+				<div class="about-content">
+				<p>When I am not coding, I stay active by riding my bike and longboard throughout the city. Growing up in Maine gave me a big appetite for the outdoors.</p>
 				</div>
-				<div class="slides">
-					<img class="slide-image" src="images/adulting.png">
-					<div class="slide-content">
-					<h5>Adulting App</h5>
-						<p>Username: newuser Password: new123</p>
-						<a href="https://adulting-app.herokuapp.com/users/sign_in" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
-					</div>
+			</div>
+			<div class="about-icons">
+				<img src="images/idea.png" alt="">
+				<div class="about-content">
+					<p>My immediate goals are to earn employment as a full-stack or front-end developer. The stack that I am perfecting is React, Node, Express and Postgres.</p>
 				</div>
-				<div class="slides">
-					<img class="slide-image" src="images/admin-panel.png">
-					<div class="slide-content">
-						<h5>School Tools Admin Panel</h5>
-						<a href="https://school-tools.herokuapp.com/" target="_blank" class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn" role="button" aria-pressed="true">Go to website</a>
-					</div>
-				</div>
-				<div class="slide-btns">
-					<div class="btn-group" role="group">
-						<button type="button" class="btn btn-outline-light btn-lg" onclick="plusDivs(-1)">prev</button>
-						<button type="button" class="btn btn-outline-light btn-lg" onclick="plusDivs(+1)">next</button>
-					</div>
-				</div>
-			
 			</div>
 		</div>
 	</div>
 		
-
-
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 

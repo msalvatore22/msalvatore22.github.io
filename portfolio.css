@@ -23,6 +23,8 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100%;
+	color: white;
+	font-family: 'Comfortaa', cursive;
 }
 
 .row {
@@ -40,7 +42,7 @@ a {
 /*--- Home ---*/
 
 .home {
-	margin: 0;
+	margin: 0; 
 	background: linear-gradient( rgba(0,0,0,0.2), rgba(222, 22, 22, 0.9)) no-repeat center center fixed;
 	background-color: #5899e2;
 	background-size: cover;
@@ -51,6 +53,7 @@ a {
 	min-height: 100%;
 	min-height: 100vh;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 }
@@ -58,12 +61,7 @@ a {
 /*--- Welcome Text ----*/
 
 .codeLang {
-	font-family: 'Comfortaa', cursive;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	font-size: 50px;
-	margin: 20px 0 0 0;	
+	font-size: 20px;	
 }
 
 .name {
@@ -71,8 +69,12 @@ a {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	font-size: 100px;
-	margin-top: 50px;
+	text-align: center;
+	line-height: 80px;
+	font-size: 50px;
+	padding: 30px 75px;
+	border: 9px solid white;
+	border-radius: 5px;
 }
 
 .coding-icons {
@@ -82,9 +84,10 @@ a {
 }
 
 .code-icon {
-	margin: 36px;
+	margin: 20px;
 	height: 50px;
 	width: 50px;
+	cursor: pointer;
 }
 
 /*--- Main Nav ----*/
@@ -100,7 +103,7 @@ a {
 
 .main-nav li {
 	display: inline-block;
-	margin: 40px 20px;
+	margin: 20px 20px;
 }
 
 
@@ -115,22 +118,29 @@ a {
 	width: 100%;
 	min-height: 100%;
 	min-height: 100vh;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	display: grid;
 	background: linear-gradient(to top, rgba(0,0,0,0.2), rgba(222, 22, 22, 0.9)) no-repeat center center fixed;
 	background-color: #5899e2;
+	grid-template-columns: [first] 25% [col1-end] auto [col2-start] 25% [end];
+	grid-template-rows: [row1-start] 25% [row1-end] 50% [third-line] 25% [last-line];
 }
 
-
+.slides {
+	grid-column-start: col1-end;
+	grid-column-end: span col2-start;
+	grid-row-start: row1-end;
+	grid-row-end: span third-line;
+	place-self: center;
+	align-items: end;
+}
 
 .slide-content {
-	border: solid white 1px;
+	border: solid white 3px;
 	border-radius: 5px;
 	padding: 15px 20px;
 	margin: 20px 0;
 	font-family: 'Comfortaa', cursive;
+	text-align: center;
 	color: white;
 }
 
@@ -148,9 +158,67 @@ a {
 .arrow-btn {
 	background: transparent;
 	border: transparent;
+
 }
 
-/*--- contact ----*/
+.arrow1 {
+	grid-column-start: col1-end;
+	grid-column-end: col1-end;
+	grid-row-start: row1-end;
+	grid-row-end: span third-line;
+	align-self: center;
+}
+
+.arrow2 {
+	grid-column-start: col2-start;
+	grid-column-end: col2-start;
+	grid-row-start: row1-end;
+	grid-row-end: span third-line;
+	align-self: center;
+}
+
+/*--- about ----*/
+
+.about {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	min-height: 100vh;
+	width: 100%;
+	min-height: 100%;
+	min-height: 100vh;
+	background: linear-gradient(to top, rgba(0,0,0,0.2), rgba(222, 22, 22, 0.9)) no-repeat center center fixed;
+	background-color: #1b2845;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.about-main {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.about-icons {
+	margin: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.about-content {
+	width: 250px;
+	text-align: center;
+}
+
+.michael {
+	border: solid 3px white;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+
 
 
 
