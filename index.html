@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
+	<meta name="viewport" content="width=device-width">
 	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300" rel="stylesheet">
 	<link rel="icon" href="images/logo.png" type="image" sizes="16x16">
 	<title>Michael Salvatore</title>
@@ -11,7 +12,6 @@
 <body>
 	<div class="home">
 		<h1 class="name">Michael <br> Salvatore <span></span></h1>
-		<!-- <h1 class="codeLang">Web Developer</h1> -->
 		<div class="coding-icons">
 			<img class="code-icon" src="images/javascript-white.png" onmouseover="this.src='images/javascript.png';" onmouseout="this.src='images/javascript-white.png';">
 			<img class="code-icon" src="images/react-white.png" onmouseover="this.src='images/react.png';" onmouseout="this.src='images/react-white.png';">
@@ -20,9 +20,8 @@
 			<img class="code-icon" src="images/ruby-white.png" onmouseover="this.src='images/ruby.png';" onmouseout="this.src='images/ruby-white.png';">
 		</div>
 		<ul class="main-nav">
-			<!-- <li><button class="btn btn-outline-light btn-rounded btn-sm my-0 projects-btn">Projects</button></li> -->
-			<li><a class="btn btn-outline-light btn-rounded btn-sm my-0" href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><img src="images/linkedin-white.png" alt="" onmouseover="this.src='images/linkedin.png';" onmouseout="this.src='images/linkedin-white.png';"></a></li>
-			<li><a class="btn btn-outline-light btn-rounded btn-sm my-0" href="https://github.com/msalvatore22/" target="_blank"><img src="images/github-white.png" alt="" onmouseover="this.src='images/github.png';" onmouseout="this.src='images/github-white.png';"></a></li>
+			<li><a href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><img class="link-icon" src="images/linkedin-white.png" alt="" onmouseover="this.src='images/linkedin.png';" onmouseout="this.src='images/linkedin-white.png';"></a></li>
+			<li><a href="https://github.com/msalvatore22/" target="_blank"><img class="link-icon" src="images/github-white.png" alt="" onmouseover="this.src='images/github.png';" onmouseout="this.src='images/github-white.png';"></a></li>
 		</ul>
 		<a href="#blank" class="projects-btn"><img class="down-arrow" src="images/down-arrow.png"></a>
 	</div>
@@ -86,17 +85,15 @@
 		<div class="arrows">
 				<button class="arrow-btn" onclick="plusDivs(-1)"><img class="arrow" src="images/left-arrow.png"></button>
 		
-				<button class="arrow-btn" onclick="plusDivs(1)"><img src="images/right arrow.png"></button>
+				<button class="arrow-btn" onclick="plusDivs(1)"><img class="arrow" src="images/right arrow.png"></button>
 			</div>
 	</div>
-
-	
 
 	<div class="about">
 		<div>
 			<img class="michael" src="images/linkedInphoto.jpeg" alt="">
 		</div>
-		<div>
+		<div class="about-heading">
 			<h2>Michael is a web developer currently living in New York City.</h2>
 		</div>
 		<div class="about-main">

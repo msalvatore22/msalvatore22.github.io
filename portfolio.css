@@ -41,7 +41,6 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
 	width: 100%;
-	min-height: 100%;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
@@ -51,6 +50,7 @@ a {
 
 .down-arrow {
 	position: absolute;
+	left: 49.2%;
 	bottom: 5px;
 }
 
@@ -112,7 +112,6 @@ a {
 	min-height: 100%;
 	min-height: 100vh;
 	width: 100%;
-	display: grid;
 	background: linear-gradient(to top, rgba(101,175,255,0.8), rgba(222, 22, 22, 0.8)), url(images/ocean.jpg) no-repeat center center fixed;;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -141,12 +140,16 @@ a {
 	border-radius: 5px;
 }
 
-
 .arrow-btn {
 	background: transparent;
 	border: transparent;
 	margin: 0;
 	padding: 0;
+	cursor: pointer;
+}
+
+.arrow-btn:focus {
+	outline: none;
 }
 
 .arrows {
@@ -205,19 +208,15 @@ a {
 
 /* Big tablet to 1200px  */
 @media (max-width: 1200px) {
-	.greeting {
-		/* padding: 360px; */
-	}
+	
 }
 /* Small tablet to big tablet: from 768px to 1024px */
 @media (max-width: 1024px) {
-		.greeting {
-			/* padding: 360px; */
-		}
+		
 }
 /* Small phones to small tablets: from 481px to 767px */
 @media (max-width: 767px) {
-
+	
 
 }
 
@@ -225,12 +224,80 @@ a {
 
 
 @media (max-width: 480px) {
-	#projects {
-		height: 1200px;
+	/* home */
+	
+	.name {
+		font-size: 200%;
+		padding: 20px 45px;
 	}
 
-	#home {
-		height: 1200px;
+	.code-icon {
+		margin: 10px;
+		height: 40px;
+		width: 40px;
 	}
+
+	.link-icon {
+		height: 40px;
+		width: 40px;
+	}
+
+	.down-arrow {
+		left: 46%;
+	}
+
+	/* projects */
+
+	.slides {
+		width: 320px;
+	}
+	
+	.slide-content {
+		font-size: 60%;
+		width: 300px;
+		padding: 5px 10px;
+		margin-top: 70px;
+	}
+
+	.slide-image {
+		height: 240px;
+		width: 320px;
+		border-radius: 5px;
+	}
+
+	.arrow {
+		height: 20px;
+		width: 20px;
+		margin-top: 90px;
+	}
+
+	.arrows {
+		width: 30%;
+	}
+
+	/* about */
+
+	.michael {
+		height: 100px;
+		width: 100px;
+		margin-top: 40px;
+	}
+
+	.about-main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.about-icons {
+		margin: 20px 0 0 0;
+	}
+
+	.about-heading {
+		text-align: center;
+		font-size: 60%;
+	}
+
 }
 
