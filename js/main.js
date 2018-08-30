@@ -3,6 +3,53 @@ document.querySelector(".projects-btn").addEventListener('click', (event) => {
 	section.scrollIntoView({behavior: "smooth"});
 });
 
+document.addEventListener("scroll", (event) => {
+    let slideShow = document.querySelectorAll(".slides")
+    
+
+    slideShow.forEach(slide => {
+        if(window.scrollY > 800) {
+            slide.classList.add("slidesAnimate")
+        } else {
+            slide.classList.remove("slidesAnimate")
+        };
+    })
+
+})
+
+document.addEventListener("scroll", (event) => {
+    let about = document.querySelectorAll(".about-main")[0]
+    
+    if(window.scrollY > 1600) {
+        about.classList.add("about-main-animate")
+    } else {
+        about.classList.remove("about-main-animate")
+    }
+})
+
+document.addEventListener("scroll", (event) => {
+    let michael = document.querySelectorAll(".michael")[0]
+
+
+    if(window.scrollY > 1600) {
+        michael.classList.add("michael-animate")
+    } else {
+        michael.classList.remove("michael-animate")
+    }
+})
+
+document.addEventListener("scroll", (event) => {
+    let aboutHeading = document.querySelectorAll(".about-heading")[0]
+
+    if(window.scrollY > 1600) {
+        aboutHeading.classList.add("about-heading-animate")
+    } else {
+        aboutHeading.classList.remove("about-heading-animate")
+    }
+})
+
+
+
 var slideIndex = 1;
 showDivs(slideIndex);
 
@@ -20,3 +67,6 @@ function showDivs(n) {
     }
     x[slideIndex-1].style.display = "block"; 
 }
+
+
+

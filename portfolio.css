@@ -54,6 +54,42 @@
   }
 }
 
+@keyframes fadeRight {
+  0% {
+    opacity:0;
+    transform:  translate(-800px,0px);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    opacity:0;
+    transform:  translate(0px, 400px);
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px);
+  }
+}
+
+@keyframes grow {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+	50% {
+		opacity: 1;
+		transform: scale(1.2);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1)
+	}
+}
 
 /* --- setup --- */
 
@@ -106,7 +142,6 @@ a {
 	animation: fadeDown 1s forwards;
 }
 
-/*--- Welcome Text ----*/
 
 .codeLang {
 	font-size: 20px;	
@@ -193,7 +228,13 @@ a {
 }
 
 .slides {
+	opacity: 0;
+}
+
+.slidesAnimate {
 	width: 720px;
+	animation: fadeIn 1s forwards;
+	animation-iteration-count: 1;
 }
 
 .slide-image {
@@ -241,10 +282,28 @@ a {
 	justify-content: center;
 }
 
+.about-heading {
+	opacity: 0;
+}
+
+.about-heading-animate {
+	animation: fadeRight 1s forwards ease-in;
+}
+
 .about-main {
+	opacity: 0;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	overflow: hidden;
+}
+
+.about-main-animate {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	overflow: hidden;
+	animation: fadeUp 2s forwards;
 }
 
 .about-icons {
@@ -263,9 +322,15 @@ a {
 	border: solid 3px white;
 	border-radius: 50%;
 	margin-bottom: 20px;
+	opacity: 0;
 }
 
-
+.michael-animate {
+	border: solid 3px white;
+	border-radius: 50%;
+	margin-bottom: 20px;
+	animation: grow 2s forwards;
+}
 
 
 /* Big tablet to 1200px  */
