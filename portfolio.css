@@ -1,6 +1,61 @@
-/*--- -----------*/
+/* --- Keyframes --- */
+
+@keyframes fadeIn {
+	0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+	0% {
+		opacity: 0;
+		transform: translate(300px, 0px) skewX(-30deg);
+	}
+	60% {
+		opacity: 1;
+		transform: translate(-10px, 0px) skewX(30deg);
+	}
+	80% {
+		opacity: 1;
+		transform: translate(-10px, 0px) skewX(-15deg);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px) skewX(0deg);
+	}
+}
+
+@keyframes slideInRight {
+	0% {
+		opacity: 0;
+		transform: translate(-300px, 0px) skewX(-30deg);
+	}
+	60% {
+		opacity: 1;
+		transform: translate(-10px, 0px) skewX(30deg);
+	}
+	80% {
+		opacity: 1;
+		transform: translate(-10px, 0px) skewX(-15deg);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0px, 0px) skewX(0deg);
+	}
+}
+
+@keyframes fadeDown {
+  0% {
+    opacity:0;
+    transform:  translate(0px,-50px)  ;
+  }
+  100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+  }
+}
 
 
+/* --- setup --- */
 
 html {
 	color: #F1F0EA;
@@ -19,10 +74,6 @@ body {
 	font-family: 'Comfortaa', cursive;
 }
 
-.row {
-	margin: 0;
-	padding: 0;
-}
 
 /*--- Links ---*/
 
@@ -52,6 +103,7 @@ a {
 	position: absolute;
 	left: 49.2%;
 	bottom: 5px;
+	animation: fadeDown 1s forwards;
 }
 
 /*--- Welcome Text ----*/
@@ -59,6 +111,7 @@ a {
 .codeLang {
 	font-size: 20px;	
 }
+
 
 .name {
 	font-family: 'Comfortaa', cursive;
@@ -71,12 +124,14 @@ a {
 	padding: 30px 75px;
 	border: 6px solid white;
 	border-radius: 5px;
+	animation: fadeIn 3s forwards;
 }
 
 .coding-icons {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	overflow: hidden;
 }
 
 .code-icon {
@@ -84,6 +139,7 @@ a {
 	height: 50px;
 	width: 50px;
 	cursor: pointer;
+	animation: slideInLeft 1s forwards ease-in;
 }
 
 /*--- Main Nav ----*/
@@ -95,11 +151,13 @@ a {
 	justify-content: center;
 	list-style: none;
 	padding: 0;
+	animation: slideInRight 1s forwards ease-in;
 }
 
 .main-nav li {
 	display: inline-block;
 	margin: 20px 20px;
+	
 }
 
 
