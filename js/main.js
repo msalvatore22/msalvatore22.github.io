@@ -8,7 +8,7 @@ document.addEventListener("scroll", (event) => {
     
 
     slideShow.forEach(slide => {
-        if(window.scrollY > 600) {
+        if(window.scrollY > 580) {
             slide.classList.add("slidesAnimate")
         } else {
             slide.classList.remove("slidesAnimate")
