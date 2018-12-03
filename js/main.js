@@ -10,9 +10,7 @@ document.addEventListener("scroll", (event) => {
     slideShow.forEach(slide => {
         if(window.scrollY > 580) {
             slide.classList.add("slidesAnimate")
-        } else {
-            slide.classList.remove("slidesAnimate")
-        };
+        }
     })
 
 })
@@ -22,8 +20,6 @@ document.addEventListener("scroll", (event) => {
     
     if(window.scrollY > 1200) {
         about.classList.add("about-main-animate")
-    } else {
-        about.classList.remove("about-main-animate")
     }
 })
 
@@ -33,9 +29,7 @@ document.addEventListener("scroll", (event) => {
 
     if(window.scrollY > 1200) {
         michael.classList.add("michael-animate")
-    } else {
-        michael.classList.remove("michael-animate")
-    }
+    } 
 })
 
 document.addEventListener("scroll", (event) => {
@@ -43,9 +37,7 @@ document.addEventListener("scroll", (event) => {
 
     if(window.scrollY > 1200) {
         aboutHeading.classList.add("about-heading-animate")
-    } else {
-        aboutHeading.classList.remove("about-heading-animate")
-    }
+    } 
 })
 
 
