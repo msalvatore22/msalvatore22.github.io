@@ -3,118 +3,45 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<meta name="viewport" content="width=device-width">
-	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300" rel="stylesheet">
+
 	<link rel="icon" href="images/logo.png" type="image" sizes="16x16">
 	<title>Michael Salvatore</title>
 
 </head>
 
 <body>
-	<div class="home">
-		<h1 class="name">Michael <br> Salvatore <span></span></h1>
-		<div class="coding-icons">
-			<img class="code-icon" src="images/javascript-white.png" onmouseover="this.src='images/javascript.png';" onmouseout="this.src='images/javascript-white.png';">
-			<img class="code-icon" src="images/react-white.png" onmouseover="this.src='images/react.png';" onmouseout="this.src='images/react-white.png';">
-			<img class="code-icon" src="images/node-logo-white.png" onmouseover="this.src='images/node.png';" onmouseout="this.src='images/node-logo-white.png';">
-			<img class="code-icon" src="images/postgres-white.png" onmouseover="this.src='images/postgres.png';" onmouseout="this.src='images/postgres-white.png';">
-			<img class="code-icon" src="images/ruby-white.png" onmouseover="this.src='images/ruby.png';" onmouseout="this.src='images/ruby-white.png';">
-		</div>
-		<ul class="main-nav">
-			<li><a href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><img class="link-icon" src="images/linkedin-white.png" alt="" onmouseover="this.src='images/linkedin.png';" onmouseout="this.src='images/linkedin-white.png';"></a></li>
-			<li><a href="https://github.com/msalvatore22/" target="_blank"><img class="link-icon" src="images/github-white.png" alt="" onmouseover="this.src='images/github.png';" onmouseout="this.src='images/github-white.png';"></a></li>
-		</ul>
-		<a href="#blank" class="projects-btn"><img class="down-arrow" src="images/down-arrow.png"></a>
+	<div id="home">
+		<h1>Michael Salvatore</h1>
+		<p>Full-stack Web Developer</p>
+		<p>View My Work</p>
 	</div>
-
-	<div id="projects">
-		<div class="slides">
-			<img class="slide-image" src="images/dailyCoder.png">
-			<div class="slide-content">
-				<h2>The Daily Coder</h2>
-				<h4>Node.js | Express | React | Redux | MongoDB | Materialize | Heroku</h4>
-				<a href="https://daily-coder.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-			</div>
-		</div>
-		<div class="slides">
-			<video  class="slide-image" width="720" height="480" controls>
-				<source src="images/349d284b3f4b450a876f57f6bd78a751.mp4" type="video/mp4">
-			</video>
-			<div class="slide-content">
-				<h2>College Cost Calculator</h2>
-				<h4>Node | Express | Axios | Bootstrap | Heroku</h4>
-				<a href="http://college-cost-calculator.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-			</div>
-		</div>
-		<div class="slides">
-			<video  class="slide-image" width="720" height="480" controls>
-				<source src="images/37e3ae1a01d144b5babc318d1cf43669.mp4" type="video/mp4">
-			</video>
-			<div class="slide-content">
-				<h2>Star Wars Tumblr</h2>
-				<h4>Ruby | Sinatra | Postgres | Materialize | Heroku</h4>
-				<p>Login as Darth Vader! <br> Username: Darth Vader | Password: vader</p>
-				<a href="https://star-wars-tumblr.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-			</div>
-		</div>
-		<div class="slides">
-			<img class="slide-image" src="images/adulting.png">
-			<div class="slide-content">
-			<h2>Adulting App</h2>
-			<h3>Team lead for group project</h3>
-			<h4>Ruby on Rails | Postgres | Bootstrap | Heroku</h4>
-				<p>Username: newuser Password: new123</p>
-				<a href="https://adulting-app.herokuapp.com/users/sign_in" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-			</div>
-		</div>
-		<div class="slides">
-			<img class="slide-image" src="images/top-muffin.png">
-			<div class="slide-content">
-				<h2>Bakery App</h2>
-				<h4>Ruby | Sinatra | Materialize | Sendgrid | Heroku</h4>
-				<a href="https://stormy-spire-32133.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-			</div>
-		</div>
-		<div class="slides">
-			<img class="slide-image" src="images/pokemon.png">
-			<div class="slide-content">
-				<h2>Pokemon API Website</h2>
-				<h4>HTML | CSS | JavaScript | PokeAPI</h4>
-				<a href="https://msalvatore22.github.io/pokemon/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-			</div>
-		</div>
-		<div class="arrows">
-				<button class="arrow-btn" onclick="plusDivs(-1)"><img class="arrow" src="images/left-arrow.png"></button>
-		
-				<button class="arrow-btn" onclick="plusDivs(1)"><img class="arrow" src="images/right arrow.png"></button>
-			</div>
-	</div>
-
-	<div class="about">
+	<div id="portfolio">
 		<div>
-			<img class="michael" src="images/linkedInphoto.jpeg" alt="">
+			<h1>PROJECTS</h1>
 		</div>
-		<div class="about-heading">
-			<h2>Michael is a web developer currently living in New York City.</h2>
+		<div class="project-filter">
+			<div class="filter">ALL</div>
+			<div class="filter">NODEJS</div>
+			<div class="filter">REACT</div>
+			<div class="filter">RUBY</div>
 		</div>
-		<div class="about-main">
-			<div class="about-icons">
-				<img src="images/work.png" alt="">
-				<div class="about-content">
-					<p>I have experience building and deploying full-stack applications. When building an app, I execute a minimalistic design and an intuitive user interface.</p>
-				</div>
-			</div>
-			<div class="about-icons">
-				<img src="images/bike.png" alt="">
-				<div class="about-content">
-				<p>When I am not coding, I stay active by riding my bike and longboard throughout the city. Growing up in Maine gave me a big appetite for the outdoors.</p>
-				</div>
-			</div>
-			<div class="about-icons">
-				<img src="images/idea.png" alt="">
-				<div class="about-content">
-					<p>My immediate goal is to be hired as a full-stack developer. The stack that I am currently perfecting is Postgres, Express, React, and Node.</p>
-				</div>
-			</div>
+		<div class="portfolio-images">
+			<img class="portfolio-image" src="images/dailyCoder.png" />
+			<img class="portfolio-image" src="images/college-screen-shot.png" />
+			<img class="portfolio-image" src="images/star-wars-screen-shot.png" />
+			<img class="portfolio-image" src="images/adulting.png" />
+			<img class="portfolio-image" src="images/top-muffin.png">
+			<img class="portfolio-image" src="images/pokemon.png">
+		</div>
+	</div>
+	<div id="about">
+		<div>
+			<h1>ABOUT</h1>
+		</div>
+	</div>
+	<div id="contact">
+		<div>
+			<h1>CONTACT</h1>
 		</div>
 	</div>
 		
