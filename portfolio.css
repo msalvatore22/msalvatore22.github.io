@@ -154,7 +154,7 @@ body {
 	margin-top: 40px;
 }
 
-.text-bottom > button {
+.modal-btn {
 	font-size: 20px;
 	color: #0090C1;
 	border: 2px solid #0090C1;
@@ -167,7 +167,7 @@ body {
   transition: background-color .5s ease-in;
 }
 
-.text-bottom > button:hover {
+.modal-btn:hover {
 	color: #F1F7FB;
 	background-color: #0090C1;
 }
@@ -178,6 +178,36 @@ body {
 
 .project-filter {
 	display: flex;
+}
+
+.modal-container {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+	background-color: #F1F7FB;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #0090C1;
+	width: 50%;
+}
+
+.close {
+	float: right;
+	color: #0090C1;
+}
+
+.close:hover,
+.close:focus {
+	cursor: pointer;
 }
 
 .filter {
