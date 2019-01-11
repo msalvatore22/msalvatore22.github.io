@@ -9,7 +9,6 @@ $(document).ready(function(){
     })
 })
 
-
 // scroll to projects section
 
 document.getElementById("view-work").addEventListener('click', (event) => {

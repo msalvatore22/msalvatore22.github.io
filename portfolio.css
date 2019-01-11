@@ -45,7 +45,17 @@ body {
 }
 
 #home > h1:first-child {
-	margin-bottom: 0px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#home > h1:nth-child(2) {
+	margin: 0;
+	padding-top: 0;
+}
+
+#home > h1 {
+	font-size: 48px;
 }
 
 #view-work {
@@ -151,7 +161,7 @@ body {
 }
 
 .text-bottom {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .modal-btn {
@@ -195,19 +205,49 @@ body {
 .modal-content {
 	background-color: #F1F7FB;
 	margin: auto;
-	padding: 20px;
-	border: 1px solid #0090C1;
+	padding: 50px;
 	width: 50%;
+}
+
+.description {
+	border-top: 1px solid #0090C1;
+	padding: 10px 0 20px 0;;
+}
+
+.stack {
+	color:#0090C1;
 }
 
 .close {
 	float: right;
 	color: #0090C1;
+	font-size: 20px;
 }
 
 .close:hover,
 .close:focus {
 	cursor: pointer;
+	color: #162521;
+}
+
+.visit {
+	text-decoration: none;
+	padding: 10px 15px;
+	background: #0090C1;
+	color: #F1F7FB;
+	-webkit-transition: all .5s ease-in;
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
+.visit:hover {
+	background: transparent;
+	color: #0090C1;
+}
+
+.visit > i {
+	margin-left: 5px;
 }
 
 .filter {
