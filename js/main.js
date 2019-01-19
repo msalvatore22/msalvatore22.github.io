@@ -7,6 +7,13 @@ $(document).ready(function(){
     $('#view-work').mouseleave(function(){
         $('#face').removeClass('far fa-laugh-beam').addClass('far fa-smile')
     })
+
+    // skill bar animation
+    $('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width: $(this).attr('data-percent')
+		},5000);
+	});
 })
 
 // scroll to projects section
