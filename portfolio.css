@@ -59,6 +59,77 @@ body {
 	outline: none;
 }
 
+/* hambuger menu */
+
+#hamburger-menu-wrapper {
+	position: absolute;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 99;
+	margin: 20px 30px 0 0;
+}
+
+.hamburger {
+	height: 50px;
+	width: 50px;
+}
+
+.line {
+	position: absolute;
+	width: 100%;
+	background-color: #DF3B57;
+	height: 6px;
+	border-radius: 8px;
+	transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55) 0.4s;
+}
+
+.top {
+	top: 18%
+}
+.middle {
+	top: 48%
+}
+
+.bottom {
+	top: 78%;
+}
+
+.hamburger.close .top {
+	transform: rotate(45deg);
+	top: 48%;
+}
+
+.hamburger.close .middle, .hamburger.close .bottom {
+	transform: rotate(-45deg);
+	top: 48%;
+}
+
+#hamburger-menu {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 144, 193);
+	color: white;
+	font-size: 30px;
+	transition: all ease-in .5s;
+}
+
+#hamburger-menu.open {
+	display: flex;
+	animation: fadeDown .5s forwards;
+}
+
+
 /* home section */
 #home {
 	height: 100vh;
@@ -96,7 +167,7 @@ body {
 }
 
 #view-work:hover {
-	background-color: #DF3B57;
+	background-color: #df3b57;
 	border: solid 2px #DF3B57;
 }
 
@@ -121,7 +192,7 @@ body {
 .filter {
 	margin: 50px 30px 10px 30px;
 	color: #FFF;
-	background-color: #0090C1;
+	background-color: rgb(0, 144, 193);
 	padding: 10px 15px;
 }
 
@@ -291,6 +362,7 @@ body {
 	align-items: center;
 	align-content: center;
 	margin-bottom: 80px;
+	margin-top: 80px;
 }
 
 .skills2 {
@@ -300,7 +372,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	margin-bottom: 90px;
+	margin-bottom: 100px;
 }
 
 .about-icons {
@@ -461,7 +533,7 @@ body {
 	border: solid 2px #DF3B57;
 }
 
-.to-top {
+#to-top {
 	background-color: #0091c1;
 	border: none;
 	color: #fff;
@@ -472,7 +544,7 @@ body {
 	cursor: pointer;
 }
 
-.to-top:hover {
+#to-top:hover {
 	background-color: rgba(0, 145, 193, 0.9);
 }
 

@@ -13,13 +13,27 @@ $(document).ready(function(){
 		$(this).find('.skillbar-bar').animate({
 			width: $(this).attr('data-percent')
 		},5000);
-	});
+    });
+    
+    // hambuger menu
+    $('#hamburger-menu-wrapper').click(()=>{
+        $('.hamburger').toggleClass('close');
+        $('#hamburger-menu').toggleClass('open');
+    });
+
 })
 
 // scroll to projects section
 
 document.getElementById("view-work").addEventListener('click', (event) => {
 	let section = document.getElementById("portfolio")
+	section.scrollIntoView({behavior: "smooth"});
+});
+
+// scroll to home section
+
+document.getElementById("to-top").addEventListener('click', (event) => {
+	let section = document.getElementById("home")
 	section.scrollIntoView({behavior: "smooth"});
 });
 
@@ -48,3 +62,5 @@ window.onclick = (event) => {
         event.target.style.display = 'none'
     }
 }
+
+// handle hamburger open and close
