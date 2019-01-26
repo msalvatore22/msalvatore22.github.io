@@ -33,14 +33,14 @@ $(document).ready(function(){
 
 document.getElementById("view-work").addEventListener('click', (event) => {
 	let section = document.getElementById("portfolio");
-	section.scrollIntoView({behavior: "smooth"});
+	section.scrollIntoView({behavior: "smooth", block: 'start'});
 });
 
 // scroll to home section
 
 document.getElementById("to-top").addEventListener('click', (event) => {
 	let section = document.getElementById("home")
-	section.scrollIntoView({behavior: "smooth"});
+	section.scrollIntoView({behavior: "smooth", block: 'start'});
 });
 
 // scroll to sections from hamburger menu
@@ -51,7 +51,7 @@ navBtns.forEach((btn) => {
     btn.onclick = () => {
         let sectionId = btn.getAttribute('data-nav');
         let section = document.getElementById(sectionId);
-        section.scrollIntoView({behavior: 'smooth'});
+        section.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
 })
 

@@ -46,6 +46,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	margin-top: 60px;
+	letter-spacing: 5px;
 }
 
 .underline {
@@ -154,6 +155,18 @@ body {
 	color: #FFF;
 }
 
+#home .section-title h1:first-child {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 48px;
+	letter-spacing: 6px;
+}
+
+#home .section-title .underline {
+	margin: 0;
+	background-color: #df3b57;
+}
+
 #home > h1:first-child {
 	margin-bottom: 0;
 	padding: 0;
@@ -164,9 +177,6 @@ body {
 	padding-top: 0;
 }
 
-#home > h1 {
-	font-size: 48px;
-}
 
 #view-work {
 	border: solid 2px #FFF;
@@ -205,7 +215,7 @@ body {
 .filter {
 	margin: 50px 30px 10px 30px;
 	color: #FFF;
-	background-color: rgb(0, 144, 193);
+	background-color: #0090c1;
 	padding: 10px 15px;
 }
 
@@ -533,7 +543,7 @@ body {
 	border: solid 2px #FFF;
 	padding: 10px 15px;
 	cursor: pointer;
-	width: 25%;
+	width: 30%;
 	margin-left: auto;
 	-webkit-transition: all .5s ease-in;
   -moz-transition: all .5s ease-in;
@@ -607,4 +617,50 @@ body {
 	color: #DF3B57;
 }
 
+@media (max-width: 320px){
+	#home p {
+		font-size: 15px;
+	}
 
+	.icon-links i {	
+		margin: 60px 5px 5px 5px;
+	}
+}
+
+@media (max-width: 375px){
+
+	
+}
+
+@media (max-width: 425px){
+	#home {
+		font-size: 20px;
+	}
+
+	#hamburger-menu-wrapper {
+		margin: 10px 15px 0 0;
+	}
+
+	.hamburger {
+		width: 30px;
+		height: 30px
+	}
+
+	.contact-form {
+		width: 90vw;
+	}
+
+	.contact-message {
+		width: 90vw;
+		text-align: center;
+	}
+
+	.skills1 {
+		margin-top: 0px;
+	}
+
+	.icon-links i {	
+		margin: 60px 5px 5px 5px;
+	}
+
+}
