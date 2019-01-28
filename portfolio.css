@@ -631,6 +631,8 @@ body {
 	color: #DF3B57;
 }
 
+/* media queries */
+
 @media (max-width: 320px){
 	#home p {
 		font-size: 15px;
@@ -649,6 +651,18 @@ body {
 @media (max-width: 425px){
 	#home {
 		font-size: 20px;
+	}
+
+	#home .section-title h1:first-child {
+		font-size: 20px;
+	} 
+
+	#home .section-title h1:last-child {
+		font-size: 15px;
+	}
+	
+	#home p {
+		font-size: 15px;
 	}
 
 	#hamburger-menu-wrapper {
@@ -677,4 +691,31 @@ body {
 		margin: 60px 5px 5px 5px;
 	}
 
+}
+
+@media (max-width : 768px) {
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.waypoint {
+		opacity: 1;
+	}
 }
