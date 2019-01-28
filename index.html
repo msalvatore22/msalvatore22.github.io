@@ -3,35 +3,29 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="portfolio.css">
 	<meta name="viewport" content="width=device-width">
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:300" rel="stylesheet">
 	<link rel="icon" href="images/logo.png" type="image" sizes="16x16">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<title>Michael Salvatore</title>
 
 </head>
 
 <body>
-	<div id="hamburger-menu-wrapper">
-		<div class="hamburger">
-			<span class="line top"></span>
-			<span class="line middle"></span>
-			<span class="line bottom"></span>
+	<div class="home">
+		<h1 class="name">Michael <br> Salvatore <span></span></h1>
+		<div class="coding-icons">
+			<img class="code-icon" src="images/javascript-white.png" onmouseover="this.src='images/javascript.png';" onmouseout="this.src='images/javascript-white.png';">
+			<img class="code-icon" src="images/react-white.png" onmouseover="this.src='images/react.png';" onmouseout="this.src='images/react-white.png';">
+			<img class="code-icon" src="images/node-logo-white.png" onmouseover="this.src='images/node.png';" onmouseout="this.src='images/node-logo-white.png';">
+			<img class="code-icon" src="images/postgres-white.png" onmouseover="this.src='images/postgres.png';" onmouseout="this.src='images/postgres-white.png';">
+			<img class="code-icon" src="images/ruby-white.png" onmouseover="this.src='images/ruby.png';" onmouseout="this.src='images/ruby-white.png';">
 		</div>
+		<ul class="main-nav">
+			<li><a href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><img class="link-icon" src="images/linkedin-white.png" alt="" onmouseover="this.src='images/linkedin.png';" onmouseout="this.src='images/linkedin-white.png';"></a></li>
+			<li><a href="https://github.com/msalvatore22/" target="_blank"><img class="link-icon" src="images/github-white.png" alt="" onmouseover="this.src='images/github.png';" onmouseout="this.src='images/github-white.png';"></a></li>
+		</ul>
+		<a href="#blank" class="projects-btn"><img class="down-arrow" src="images/down-arrow.png"></a>
 	</div>
-	<div id="hamburger-menu">
-		<h1 class="hamburger-nav" data-nav="home">HOME</h1>
-		<h1 class="hamburger-nav" data-nav="portfolio">PROJECTS</h1>
-		<h1 class="hamburger-nav" data-nav="about">ABOUT</h1>
-		<h1 class="hamburger-nav" data-nav="contact">CONTACT</h1>
-	</div>
-	<div id="home">
-		<div class="section-title waypoint" data-animation="zoomIn">
-			<h1>MICHAEL SALVATORE</h1>
-			<div class="underline"></div>
-			<h1>SOFTWARE ENGINEER</h1>
+
 	<div id="projects">
 		<div class="slides">
 			<img class="slide-image" src="images/dailycoderscreenshot.png">
@@ -39,188 +33,91 @@
 				<h2>The Daily Coder</h2>
 				<h4>Node.js | Express | React | Redux | MongoDB | Materialize | Heroku</h4>
 				<a href="https://daily-coder.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
-		</div>
-		<p id="view-work" class="waypoint" data-animation="flipInX" data-delay="1s">VIEW MY WORK <i id="face" class="far fa-smile"></i></p>
-	</div>
-	<div id="portfolio">
-		<div class="section-title">
-			<h1 class="waypoint" data-animation="fadeInRight">PROJECTS</h1>
-			<div class="underline waypoint" data-animation="fadeInRight" data-delay=".25s"></div>
-		</div>
-		<div class="portfolio-images">
-			<div class="image-container">
-				<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".25s" src="images/dailyCoder.png" />
-				<div class="image-overlay">
-					<div class="image-text text-top">The Daily Coder</div>
-					<div class="image-text text-middle">Node.js + React + Redux + MongoDB</div>
-					<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalOne">MORE INFO</button></div>
-				</div>
-				<div id="modalOne" class="modal-container">
-					<div class="modal-content">
-						<span class="close"><i class="far fa-times-circle"></i></span>
-						<h2>The Daily Coder</h2>
-						<p class="stack">Node.js | Express | React | Redux | MongoDB | PassportJS | Axios | Materialize | News API</p>
-						<p class="description">The daily coder is a web-application for developers to stay up-to-date on the latest technology trends and news. With a Node.js/MongoDB back-end API and React/Redux front-end, users can search news topics and bookmark their favorite articles. This project is my first full-stack application that I deployed after graduating bootcamp in the summer of 2018.</p>
-						<a class="visit" href="https://daily-coder.herokuapp.com/" target="_blank">View Site <i class="fas fa-external-link-alt"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="image-container">
-				<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".5s" src="images/c-3.png" />
-				<div class="image-overlay">
-					<div class="image-text text-top">College Cost Calculator</div>
-					<div class="image-text text-middle">Node.js + Javascript + Bootstrap</div>
-					<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalTwo">MORE INFO</button></div>
-				</div>
-				<div id="modalTwo" class="modal-container">
-					<div class="modal-content">
-						<span class="close"><i class="far fa-times-circle"></i></span>
-						<h2>College Cost Calculator</h2>
-						<p class="stack">Node.js | Express | EJS | Javascript | Bootstrap | US Dept. of Education College Scorecard API</p>
-						<p class="description">The College Cost Calculator is a tool to help high school students and their families estimate the cost of attending college. Users are able to search for the colleges of their choice and based on their inputs they can estimate their cost of attendance. This was my first deployed Node.js app and was the final project for my bootcamp.</p>
-						<a class="visit" href="http://college-cost-calculator.herokuapp.com/" target="_blank">View Site <i class="fas fa-external-link-alt"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="image-container">
-					<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".75s" src="images/swtumblr.png" />
-				<div class="image-overlay">
-					<div class="image-text text-top">Star Wars Tumblr</div>
-					<div class="image-text text-middle">Sinatra + Materialize</div>
-					<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalThree">MORE INFO</button></div>
-				</div>
-				<div id="modalThree" class="modal-container">
-					<div class="modal-content">
-						<span class="close"><i class="far fa-times-circle"></i></span>
-						<h2>Star Wars Tumblr</h2>
-						<p class="stack">Ruby | Sinatra | Materialize | CSS | Active Record | PostgreSQL</p>
-						<p class="description">Star Wars Tumblr is a beautiful blogging website dedicated to my favorite movie saga Star Wars. This app provides a CRUD interface for users and posts. Customizing Materialize to adhere to the theme of each page was a satisfying accomplishment.</p>
-						<a class="visit" href="https://star-wars-tumblr.herokuapp.com/" target="_blank">View Site <i class="fas fa-external-link-alt"></i></a>
-					</div>
-				</div>
-			</div>
-			<div class="image-container">
-				<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay="1s" src="images/adulting.png" />
-				<div class="image-overlay">
-					<div class="image-text text-top">Adulting</div>
-					<div class="image-text text-middle">Ruby on Rails + Bootstrap</div>
-					<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalFour">MORE INFO</button></div>
-				</div>
-				<div id="modalFour" class="modal-container">
-					<div class="modal-content">
-						<span class="close"><i class="far fa-times-circle"></i></span>
-						<h2>Adulting</h2>
-						<p class="stack">Ruby on Rails | Javascript | Bootstrap | Devise | Search Kick | Active Record | PostgreSQL</p>
-						<p class="description">Adulting is a blogging website with the focus on helping people become better adults. The app provides a CRUD interface for users, posts, comments, likes and adulting score. This was a group project that I lead during bootcamp. I was the owner of the git repository and managed all the pull requests.</p>
-						<a class="visit" href="https://adulting-app.herokuapp.com/" target="_blank">View Site <i class="fas fa-external-link-alt"></i></a>
-					</div>
-				</div>
 			</div>
 		</div>
-	</div>
-	<div id="about">
-		<div class="section-title">
-			<h1 class="waypoint" data-animation="fadeInLeft">ABOUT</h1>
-			<div class="underline waypoint" data-animation="fadeInLeft" data-delay=".25s"></div>
-		</div>
-		<div class="skills1">
-				<div class="about-icons waypoint" data-animation="flipInY" data-delay=".5s">
-					<img src="images/work.png" alt="">
-					<div class="about-content">
-						<p>I have experience building and deploying full-stack applications. When building an app, I execute a minimalistic design and an intuitive user interface.</p>
-					</div>
-				</div>
-				<div class="about-icons waypoint" data-animation="flipInY" data-delay=".75s">
-					<img src="images/bike.png" alt="">
-					<div class="about-content">
-					<p>When I am not coding, I stay active by riding my bike and longboard throughout the city. Growing up in Maine gave me a  appetite for the outdoors.</p>
-					</div>
-				</div>
-				<div class="about-icons waypoint" data-animation="flipInY" data-delay="1s">
-					<img src="images/idea.png" alt="">
-					<div class="about-content">
-						<p>My goal is for my work to make a positve impact on people. The stack that I am currently perfecting is React, Node.js, and MongoDB.</p>
-					</div>
-				</div>
-		</div>
-		<div class="skills2">
-			<div class="about-me waypoint" data-animation="fadeInLeft" data-delay="1.25s">
-				<div>
-						<img class="michael" src="images/linkedInphoto.jpeg" alt="">
-					</div>
-					<div class="about-heading">
-						<p>I'm a full-stack engineer currently living in New York City.</p>
-					</div>
-			</div>
-			<div class="skills-chart waypoint" data-animation="fadeInRight" data-delay="1.25s">
-				<div class="skillbar" data-percent="80%">
-					<div class="skillbar-title"><span>CSS</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skillbar-percent">80%</div>
-				</div>
-				<div class="skillbar" data-percent="90%">
-					<div class="skillbar-title"><span>HTML5</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skillbar-percent">90%</div>
-				</div>
-				<div class="skillbar" data-percent="80%">
-					<div class="skillbar-title"><span>JavaScript</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skillbar-percent">80%</div>
-				</div>
-				<div class="skillbar" data-percent="70%">
-					<div class="skillbar-title"><span>React</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skillbar-percent">70%</div>
-				</div>
-				<div class="skillbar" data-percent="60%">
-					<div class="skillbar-title"><span>Redux</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skillbar-percent">60%</div>
-				</div>
-				<div class="skillbar" data-percent="70%">
-					<div class="skillbar-title"><span>Node.js</span></div>
-					<div class="skillbar-bar"></div>
-					<div class="skillbar-percent">70%</div>
-				</div>
+		<div class="slides">
+			<video  class="slide-image" width="720" height="480" controls>
+				<source src="images/349d284b3f4b450a876f57f6bd78a751.mp4" type="video/mp4">
+			</video>
+			<div class="slide-content">
+				<h2>College Cost Calculator</h2>
+				<h4>Node | Express | Axios | Bootstrap | Heroku</h4>
+				<a href="http://college-cost-calculator.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
 			</div>
 		</div>
-	</div>
-	<div id="contact">
-		<div class="section-title">
-			<h1 class="waypoint" data-animation="fadeInRight">CONTACT</h1>
-			<div class="underline waypoint" data-animation="fadeInLeft" data-delay=".5s"></div>
+		<div class="slides">
+			<video  class="slide-image" width="720" height="480" controls>
+				<source src="images/37e3ae1a01d144b5babc318d1cf43669.mp4" type="video/mp4">
+			</video>
+			<div class="slide-content">
+				<h2>Star Wars Tumblr</h2>
+				<h4>Ruby | Sinatra | Postgres | Materialize | Heroku</h4>
+				<p>Login as Darth Vader! <br> Username: Darth Vader | Password: vader</p>
+				<a href="https://star-wars-tumblr.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
+			</div>
 		</div>
-		<div class="contact-message waypoint" data-animation="fadeInDown" data-delay=".5s">
-			<p>Need a software engineer? Let's work together!</p>
+		<div class="slides">
+			<img class="slide-image" src="images/adulting.png">
+			<div class="slide-content">
+			<h2>Adulting App</h2>
+			<h3>Team lead for group project</h3>
+			<h4>Ruby on Rails | Postgres | Bootstrap | Heroku</h4>
+				<p>Username: newuser Password: new123</p>
+				<a href="https://adulting-app.herokuapp.com/users/sign_in" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
+			</div>
 		</div>
-		<div class="contact-form-container waypoint" data-animation="flipInX" data-delay="1s">
-			<form class="contact-form" action="https://formspree.io/msalvatore22@gmail.com" method="POST">
-				<input type="text" name="name" placeholder="Name">
-				<input type="hidden" name="_subject" value="Website contact" />
-				<input type="text" name="_gotcha" style="display:none" />
-				<input type="email" name="_replyto" placeholder="Email">
-				<textarea type="text" name="body" placeholder="Message"></textarea>
-				<input id="submit" type="submit" value="SEND">
-			</form>
+		<div class="slides">
+			<img class="slide-image" src="images/top-muffin.png">
+			<div class="slide-content">
+				<h2>Bakery App</h2>
+				<h4>Ruby | Sinatra | Materialize | Sendgrid | Heroku</h4>
+				<a href="https://stormy-spire-32133.herokuapp.com/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
+			</div>
 		</div>
-		<button id="to-top">
-				<i class="fas fa-angle-double-up"></i>
-		</button>
-	</div>
-	<div id="footer">
-		<div class="icon-links">
-			<a href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-			<a href="https://github.com/msalvatore22/" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="https://codepen.io/msalvatore22/" target="_blank"><i class="fab fa-codepen"></i></a>
-			<a href="https://www.freecodecamp.org/certification/msalvatore22/front-end-libraries" target="_blank"><i class="fab fa-free-code-camp"></i></i></a>
+		<div class="slides">
+			<img class="slide-image" src="images/pokemon.png">
+			<div class="slide-content">
+				<h2>Pokemon API Website</h2>
+				<h4>HTML | CSS | JavaScript | PokeAPI</h4>
+				<a href="https://msalvatore22.github.io/pokemon/" target="_blank"><img src="images/website.png" alt="" onmouseover="this.src='images/website-blue.png';" onmouseout="this.src='images/website.png';"></a>
+			</div>
 		</div>
+		<div class="arrows">
+				<button class="arrow-btn" onclick="plusDivs(-1)"><img class="arrow" src="images/left-arrow.png"></button>
 		
-		<p>MICHAEL SALVATORE <span class="copyright"><i class="far fa-copyright"></i> 2019</span></p>
+				<button class="arrow-btn" onclick="plusDivs(1)"><img class="arrow" src="images/right arrow.png"></button>
+			</div>
 	</div>
 
-
-
+	<div class="about">
+		<div>
+			<img class="michael" src="images/linkedInphoto.jpeg" alt="">
+		</div>
+		<div class="about-heading">
+			<h2>Michael is a web developer currently living in New York City.</h2>
+		</div>
+		<div class="about-main">
+			<div class="about-icons">
+				<img src="images/work.png" alt="">
+				<div class="about-content">
+					<p>I have experience building and deploying full-stack applications. When building an app, I execute a minimalistic design and an intuitive user interface.</p>
+				</div>
+			</div>
+			<div class="about-icons">
+				<img src="images/bike.png" alt="">
+				<div class="about-content">
+				<p>When I am not coding, I stay active by riding my bike and longboard throughout the city. Growing up in Maine gave me a big appetite for the outdoors.</p>
+				</div>
+			</div>
+			<div class="about-icons">
+				<img src="images/idea.png" alt="">
+				<div class="about-content">
+					<p>My immediate goal is to be hired as a full-stack developer. The stack that I am currently perfecting is Postgres, Express, React, and Node.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+		
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 
