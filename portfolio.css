@@ -22,6 +22,14 @@
 	}
 }
 
+.waypoint {
+	opacity: 0;
+}
+
+.animated {
+	opacity: 1;
+}
+
 /* Colors */
 
 /* #202228 */
@@ -29,6 +37,13 @@
 /* #0090C1 */
 /* #FBFBFC */
 /* #F1F1F1 */
+
+/* disable hover on scroll */
+
+.disable-hover,
+.disable-hover * {
+  pointer-events: none !important;
+}
 
 /* general setup */
 
@@ -164,7 +179,7 @@ body {
 
 #home .section-title .underline {
 	margin: 0;
-	background-color: #df3b57;
+	background-color: #0090C1;
 }
 
 #home > h1:first-child {

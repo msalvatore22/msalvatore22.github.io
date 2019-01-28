@@ -9,11 +9,15 @@ $(document).ready(function(){
     })
 
     // skill bar animation
-    $('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width: $(this).attr('data-percent')
-		},5000);
-    });
+    $('.skillbar').waypoint(()=> {
+        $('.skillbar').each(function(){
+            $(this).find('.skillbar-bar').animate({
+                width: $(this).attr('data-percent')
+            },5000);
+        });
+    }, {
+        offset: '80%'
+    })
     
     // hambuger menu open and close
     $('#hamburger-menu-wrapper').click(()=>{
@@ -26,7 +30,6 @@ $(document).ready(function(){
         $('.hamburger').toggleClass('close');
         $('#hamburger-menu').toggleClass('open');
     })
-
 })
 
 // scroll to view work
@@ -82,4 +85,41 @@ window.onclick = (event) => {
     }
 }
 
-// handle hamburger open and close
+function onScrollAnimate( elements ) {
+    elements.each( function() {
+      var elem = $(this),
+          animationClass = elem.attr('data-animation'),
+          animationDelay = elem.attr('data-delay');
+
+          elem.css({
+            '-webkit-animation-delay':  animationDelay,
+            '-moz-animation-delay':     animationDelay,
+            'animation-delay':          animationDelay
+          });
+
+
+          elem.waypoint(function() {
+            elem.addClass('animated').addClass(animationClass);
+            },{
+                offset: '80%'
+          });
+    });
+  }
+
+onScrollAnimate($('.waypoint'))
+
+// disable hover on scroll
+
+var body = document.body,
+    timer;
+
+window.addEventListener('scroll', function() {
+  clearTimeout(timer);
+  if(!body.classList.contains('disable-hover')) {
+    body.classList.add('disable-hover')
+  }
+  
+  timer = setTimeout(function(){
+    body.classList.remove('disable-hover')
+  },500);
+}, false);
