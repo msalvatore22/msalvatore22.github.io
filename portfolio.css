@@ -128,7 +128,6 @@ body {
 	justify-content: center;
 	align-items: center;
 	position: fixed;
-	opacity: 0;
 	z-index: 1;
 	padding-top: 50px;
 	left: 0;
@@ -143,7 +142,6 @@ body {
 
 #hamburger-menu.open {
 	transform: translateY(0%);
-	opacity: 1;
 }
 
 .hamburger-nav {
