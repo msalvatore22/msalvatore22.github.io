@@ -689,6 +689,18 @@ body {
 		margin: 60px 5px 5px 5px;
 	}
 
+	.modal-content {
+		background-color: #F1F1F1;
+		margin: auto;
+		padding: 20px;
+		width: 80%;
+	}
+	
+	.description {
+		border-top: 1px solid #0090C1;
+		padding: 10px 0 20px 0;;
+	}
+
 }
 
 @media (max-width : 768px) {
