@@ -320,7 +320,7 @@ body {
 }
 
 .modal-container {
-	display: none;
+	opacity: 0;
 	position: fixed;
 	z-index: 1;
 	padding-top: 50px;
@@ -329,6 +329,14 @@ body {
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,0.4);
+	transform: translateY(100%);
+	transition: all 1s ease;
+}
+
+.modal-container.open {
+	opacity: 1;
+	transform: translateY(0%);
+
 }
 
 .modal-content {

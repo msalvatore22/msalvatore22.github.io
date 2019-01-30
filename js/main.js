@@ -66,7 +66,7 @@ let btns = document.querySelectorAll('.modal-btn');
 btns.forEach((btn) => {
     btn.onclick = () => {
         let modalId = btn.getAttribute('data-modal');
-        document.getElementById(modalId).style.display = 'block';
+        document.getElementById(modalId).classList.add('open');
     }
 })
 
@@ -75,13 +75,13 @@ let closeBtns = document.querySelectorAll('.close')
 closeBtns.forEach((btn) => {
     btn.onclick = () => {
         let modal = btn.closest('.modal-container')
-        modal.style.display = 'none';
+        modal.classList.remove('open')
     }
 })
 
 window.onclick = (event) => {
-    if(event.target.className === 'modal-container'){
-        event.target.style.display = 'none';
+    if(event.target.className === 'modal-container open'){
+        event.target.classList.remove('open');
     }
 }
 
