@@ -322,7 +322,7 @@ body {
 .modal-container {
 	opacity: 0;
 	position: fixed;
-	z-index: 1;
+	z-index: 99;
 	padding-top: 50px;
 	left: 0;
 	top: 0;
