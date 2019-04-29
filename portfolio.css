@@ -370,6 +370,7 @@ body {
 .visit {
 	text-decoration: none;
 	padding: 10px 15px;
+	margin-right: 10px;
 	background: #0090C1;
 	color: #FFF;
 	-webkit-transition: all .5s ease-in;
