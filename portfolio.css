@@ -64,6 +64,10 @@ body {
 	letter-spacing: 5px;
 }
 
+.section-title:nth-of-type(3){
+	margin-top: 0px;
+}
+
 .underline {
 	height: 5px;
 	width: 60%;
@@ -419,6 +423,11 @@ body {
 	margin-bottom: 100px;
 }
 
+.skills2 > i {
+	margin: 30px ;
+	font-size: 75px;
+}
+
 .about-icons {
 	width: 260px;
 	margin: 0px 50px;
@@ -437,74 +446,6 @@ body {
 	align-items: center;
 	width: 600px;
 }
-
-.michael {
-	border-radius: 3px;
-	width: 240px;
-}
-
-.skills-chart {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 600px;
-}
-
-.skillbar {
-	position:relative;
-	display:block;
-	margin-bottom:15px;
-	width:100%;
-	background:#eee;
-	height:35px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
-}
-
-.skillbar-title {
-	position:absolute;
-	top:0;
-	left:0;
-	width:110px;
-	font-weight:bold;
-	font-size:13px;
-	color:#ffffff;
-	background:#DF3B57;
-}
-
-.skillbar-title span {
-	display:block;
-	background:rgba(0, 0, 0, 0.1);
-	padding: 0 20px;
-	height:35px;
-	line-height:35px;
-}
-
-.skillbar-bar {
-	height:35px;
-	width:0px;
-	background:#DF3B57;
-}
-
-.skillbar-percent {
-	position:absolute;
-	right:10px;
-	top:0;
-	font-size:11px;
-	height:35px;
-	line-height:35px;
-	color:#ffffff;
-	color:rgba(0, 0, 0, 0.4);
-}
-
 
 /* Contact */
 
