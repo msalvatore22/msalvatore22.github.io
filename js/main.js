@@ -7,17 +7,6 @@ $(document).ready(function(){
     $('#view-work').mouseleave(function(){
         $('#face').removeClass('far fa-laugh-beam').addClass('far fa-smile')
     })
-
-    // skill bar animation
-    $('.skillbar').waypoint(()=> {
-        $('.skillbar').each(function(){
-            $(this).find('.skillbar-bar').animate({
-                width: $(this).attr('data-percent')
-            },5000);
-        });
-    }, {
-        offset: '80%'
-    })
     
     // hambuger menu open and close
     $('#hamburger-menu-wrapper').click(()=>{
@@ -101,7 +90,7 @@ function onScrollAnimate( elements ) {
           elem.waypoint(function() {
             elem.addClass('animated').addClass(animationClass);
             },{
-                offset: '80%'
+                offset: '90%'
           });
     });
   }
