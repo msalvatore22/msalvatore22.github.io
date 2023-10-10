@@ -1,0 +1,131 @@
+$font-stack: 'Poppins', sans-serif;
+$seagull-50: #eafeffe0;
+$seagull-100: #d8fbffac;
+$seagull-200: #9ef4ff;
+$seagull-300: #5be9ff;
+$seagull-400: #0ad2ff;
+$seagull-500: #00b6e5;
+$seagull-600: #0090c0;
+$seagull-700: #03729b;
+$seagull-800: #0d5c7d;
+$seagull-900: #104c69;
+$seagull-950: #033149;
+$seagull-1000: #011621;
+
+$turquoise-50: #f0fdf9;
+$turquoise-100: #ccfbef;
+$turquoise-200: #99f6e0;
+$turquoise-300: #5eeace;
+$turquoise-400: #34d5ba;
+$turquoise-500: #14b89f;
+$turquoise-600: #0ea28fa7;
+$turquoise-700: #0f766a;
+$turquoise-800: #115e5683;
+$turquoise-900: #134e48;
+$turquoise-950: #042f2c;
+
+
+
+body {
+  font: 100% $font-stack;
+  background-color: $seagull-1000;
+  color: $seagull-50;
+
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 512px 512px 1fr;
+  margin-top: 60px;
+  column-gap: 100px;
+}
+
+header {
+  grid-column-start: 2;
+  justify-self: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  max-height: 100vh;
+
+  .name-nav {
+    grid-row-start: 1;
+
+    h1 {
+      font-size: 50px;
+    }
+
+    h2 {
+      font-weight: 200;
+      margin-top: -40px;
+      color: $seagull-100
+    }
+
+    nav {
+      margin-top: 100px;
+    }
+
+  }
+
+  .social-list {
+    grid-row-start: 2;
+    align-self: end;
+  }
+}
+
+main {
+  grid-column-start: 3;
+  justify-self: center;
+
+  #about {
+    color: $seagull-100;
+  }
+
+  #experience {
+
+    .experience-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      column-gap: 20px;
+      grid-template-rows: 1fr auto;
+      border: 1px solid $turquoise-100;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 20px 0;
+      color: $seagull-100;
+
+      h4 {
+        margin-top: 10px;
+        color: $seagull-50;   
+      }
+
+      .experience-date {
+        font-size: .75rem;
+        align-self: start;
+      }
+
+      .experience-description {
+        font-size: .75rem;
+      }
+
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+.tech-stack {
+  font-size: .75rem;
+  padding: 5px 7px;
+  background-color: $turquoise-800;
+  color: $turquoise-300;
+  border-radius: 12px;
+  margin: 5px 5px;
+}
