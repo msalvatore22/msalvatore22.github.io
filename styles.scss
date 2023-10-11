@@ -26,7 +26,9 @@ $turquoise-950: #042f2c;
 
 
 
-body {
+body, html {
+  margin: 0;
+  padding: 0;
   font: 100% $font-stack;
   background-color: $seagull-1000;
   color: $seagull-50;
@@ -40,21 +42,32 @@ ul {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 512px 512px 1fr;
-  margin-top: 60px;
-  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 100vh;
+  padding: 48px 24px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 1056px;
+  padding: 96px 0;
 }
 
 header {
-  grid-column-start: 2;
-  justify-self: center;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  width: 50%;
   max-height: 100vh;
 
   .name-nav {
-    grid-row-start: 1;
+      position: fixed;
+      top: 110px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      bottom: 96px;
 
     h1 {
       font-size: 50px;
@@ -67,57 +80,55 @@ header {
     }
 
     nav {
-      margin-top: 100px;
+      margin-top: 96px;
+    }
+
+    .social-list {
+      display: flex;
     }
 
   }
 
-  .social-list {
-    grid-row-start: 2;
-    align-self: end;
-  }
 }
 
 main {
-  grid-column-start: 3;
-  justify-self: center;
+  width: 50%;
+}
 
-  #about {
+
+
+#about {
+  color: $seagull-100;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+    grid-template-rows: 1fr auto;
+    border: 1px solid $turquoise-100;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px 0;
     color: $seagull-100;
+
+  h4 {
+    margin-top: 10px;
+    color: $seagull-50;   
   }
 
-  #experience {
+  .experience-date {
+    font-size: .75rem;
+    align-self: start;
+  }
 
-    .experience-card {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-      column-gap: 20px;
-      grid-template-rows: 1fr auto;
-      border: 1px solid $turquoise-100;
-      padding: 10px;
-      border-radius: 10px;
-      margin: 20px 0;
-      color: $seagull-100;
+  .experience-description {
+    font-size: .75rem;
+  }
 
-      h4 {
-        margin-top: 10px;
-        color: $seagull-50;   
-      }
-
-      .experience-date {
-        font-size: .75rem;
-        align-self: start;
-      }
-
-      .experience-description {
-        font-size: .75rem;
-      }
-
-      ul {
-        display: flex;
-        flex-wrap: wrap;
-      }
-    }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 

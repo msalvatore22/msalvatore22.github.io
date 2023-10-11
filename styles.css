@@ -1,4 +1,6 @@
-body {
+body, html {
+  margin: 0;
+  padding: 0;
   font: 100% "Poppins", sans-serif;
   background-color: #011621;
   color: rgba(234, 254, 255, 0.8784313725);
@@ -11,21 +13,32 @@ ul {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 512px 512px 1fr;
-  margin-top: 60px;
-  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-height: 100vh;
+  padding: 48px 24px;
+}
+
+.columns {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  width: 1056px;
+  padding: 96px 0;
 }
 
 header {
-  grid-column-start: 2;
-  justify-self: center;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  width: 50%;
   max-height: 100vh;
 }
 header .name-nav {
-  grid-row-start: 1;
+  position: fixed;
+  top: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  bottom: 96px;
 }
 header .name-nav h1 {
   font-size: 50px;
@@ -36,21 +49,21 @@ header .name-nav h2 {
   color: rgba(216, 251, 255, 0.6745098039);
 }
 header .name-nav nav {
-  margin-top: 100px;
+  margin-top: 96px;
 }
-header .social-list {
-  grid-row-start: 2;
-  align-self: end;
+header .name-nav .social-list {
+  display: flex;
 }
 
 main {
-  grid-column-start: 3;
-  justify-self: center;
+  width: 50%;
 }
-main #about {
+
+#about {
   color: rgba(216, 251, 255, 0.6745098039);
 }
-main #experience .experience-card {
+
+.card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 20px;
@@ -61,18 +74,18 @@ main #experience .experience-card {
   margin: 20px 0;
   color: rgba(216, 251, 255, 0.6745098039);
 }
-main #experience .experience-card h4 {
+.card h4 {
   margin-top: 10px;
   color: rgba(234, 254, 255, 0.8784313725);
 }
-main #experience .experience-card .experience-date {
+.card .experience-date {
   font-size: 0.75rem;
   align-self: start;
 }
-main #experience .experience-card .experience-description {
+.card .experience-description {
   font-size: 0.75rem;
 }
-main #experience .experience-card ul {
+.card ul {
   display: flex;
   flex-wrap: wrap;
 }
