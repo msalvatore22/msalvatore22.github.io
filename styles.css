@@ -4,12 +4,17 @@ body, html {
   font: 100% "Poppins", sans-serif;
   background-color: #011621;
   color: rgba(234, 254, 255, 0.8784313725);
+  scroll-behavior: smooth;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -50,6 +55,55 @@ header .name-nav h2 {
 }
 header .name-nav nav {
   margin-top: 96px;
+}
+header .name-nav nav li {
+  margin: 12px 0;
+}
+header .name-nav nav li:hover {
+  color: rgba(234, 254, 255, 0.8784313725);
+}
+header .name-nav nav .active span {
+  color: rgba(234, 254, 255, 0.8784313725);
+}
+header .name-nav nav .active .link-line {
+  border-top: 1px solid rgba(234, 254, 255, 0.8784313725);
+  width: 60px;
+  margin-right: 10px;
+  display: inline-flex;
+}
+header .name-nav nav .link-line {
+  border-top: 1px solid rgba(216, 251, 255, 0.6745098039);
+  width: 30px;
+  margin-right: 10px;
+  display: inline-flex;
+}
+header .name-nav nav a {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+header .name-nav nav a:link {
+  text-decoration: none;
+  color: rgba(216, 251, 255, 0.6745098039);
+}
+header .name-nav nav a:visited {
+  text-decoration: none;
+  color: rgba(216, 251, 255, 0.6745098039);
+}
+header .name-nav nav a:hover {
+  text-decoration: none;
+  color: rgba(234, 254, 255, 0.8784313725);
+}
+header .name-nav nav a:hover .link-line {
+  border-top: 1px solid rgba(234, 254, 255, 0.8784313725);
+  width: 60px;
+  margin-right: 10px;
+  display: inline-flex;
+}
+header .name-nav nav a:active {
+  text-decoration: none;
+  color: rgba(234, 254, 255, 0.8784313725);
 }
 header .name-nav .social-list {
   display: flex;

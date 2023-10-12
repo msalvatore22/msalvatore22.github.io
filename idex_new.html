@@ -24,9 +24,24 @@
 					<h2>Software Egineer</h2>
 					<nav>
 						<ul>
-							<li><a href="#about">ABOUT</a></li>
-							<li><a href="#experience">EXPERIENCE</a></li>
-							<li><a href="#projects">PROJECTS</a></li>
+							<li>
+								<a class="nav-link active" href="#about">
+									<span class="link-line"></span>
+									<span>ABOUT</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#experience">
+									<span class="link-line"></span>
+									<span>EXPERIENCE</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#projects">
+									<span class="link-line"></span>
+									<span>PROJECTS</span>
+								</a>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -184,4 +199,25 @@
 		</div>
 	</div>
 
+<script>
+	let navLinks = document.querySelectorAll(".nav-link")
+	navLinks.forEach(nl => {
+		nl.addEventListener("click", event => {
+			const current = document.querySelector('.active')
+			current.classList.remove('active')
+			nl.classList.add("active")
+		})
+	})
+	navLinks.forEach(nl => {
+		nl.addEventListener("click", event => {
+			event.preventDefault()
+			
+			document.querySelector(nl.getAttribute("href")).scrollIntoView({
+				behavior: "smooth", block: "end", inline: "nearest"
+			})
+		})
+	})
+
+</script>
 </body>
+</html>
