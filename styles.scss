@@ -6,14 +6,14 @@ $seagull-300: #5be9ff;
 $seagull-400: #0ad2ff;
 $seagull-500: #00b6e5;
 $seagull-600: #0090c0;
-$seagull-700: #03729b;
+$seagull-700: rgb(3, 114, 155);
 $seagull-800: #0d5c7d;
 $seagull-900: #104c69;
-$seagull-950: #033149;
+$seagull-950: #0330494a;
 $seagull-1000: #011621;
 
 $turquoise-50: #f0fdf9;
-$turquoise-100: #ccfbef;
+$turquoise-100: #ccfbefb4;
 $turquoise-200: #99f6e0;
 $turquoise-300: #5eeace;
 $turquoise-400: #34d5ba;
@@ -43,6 +43,7 @@ ul {
 
 a {
   text-decoration: none;
+  transition: color 300ms;
 }
 
 .container {
@@ -79,7 +80,7 @@ header {
 
     h2 {
       font-weight: 200;
-      margin-top: -40px;
+      margin-top: -30px;
       color: $seagull-100
     }
 
@@ -112,6 +113,7 @@ header {
         width: 30px;
         margin-right: 10px;
         display: inline-flex;
+        transition: width 300ms;
       }
 
       a {
@@ -152,6 +154,19 @@ header {
 
     .social-list {
       display: flex;
+
+      li {
+        margin-right: 20px;
+      }
+
+      a {
+        color: $turquoise-50;
+        font-size: 2rem;
+      }
+
+      a:hover {
+        color: $turquoise-300;
+      }
     }
 
   }
@@ -166,20 +181,26 @@ main {
   color: $seagull-100;
 }
 
+#experience {
+  margin-top: 96px;
+}
+
 .card {
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     grid-template-rows: 1fr auto;
-    border: 1px solid $turquoise-100;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
     color: $seagull-100;
-
+    background-color: $seagull-950;
+    box-shadow: rgba(3, 114, 155, 0.22) 0px 1px 3px 0px, rgba(3, 114, 155, 0.222) 0px 1px 2px 0px;
+  
   h4 {
-    margin-top: 10px;
-    color: $seagull-50;   
+    font-weight: 400;
+    margin: 8px 0;
+    color: $seagull-50;
   }
 
   .experience-date {
@@ -191,11 +212,41 @@ main {
     font-size: .75rem;
   }
 
+  .project-image {
+    max-width: 124px;
+    border-radius: 5px;
+    border: 2px solid $turquoise-100;
+    margin-top: 10px;
+  }
+
   ul {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .visit {
+    font-size: .69rem;
+    letter-spacing: 2px;
+    color: $turquoise-50;
+    border-radius: 12px;
+    margin: 5px 10px 0 0;
+
+  }
+
+  i {
+    transition: transform ease 300ms;
+  }
+
+  .visit:hover {
+    color: $turquoise-300;
+
+    i {
+      color: $turquoise-300;
+      transform: translateY(-2px) translateX(2px);
+    }
+  }
 }
+
 
 .tech-stack {
   font-size: .75rem;
@@ -203,5 +254,10 @@ main {
   background-color: $turquoise-800;
   color: $turquoise-300;
   border-radius: 12px;
-  margin: 5px 5px;
+  margin: 5px 5px 5px 0;
+}
+
+#projects {
+  margin: 96px 0;
+  overflow-y: hidden;
 }

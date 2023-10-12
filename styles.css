@@ -15,6 +15,7 @@ ul {
 
 a {
   text-decoration: none;
+  transition: color 300ms;
 }
 
 .container {
@@ -50,7 +51,7 @@ header .name-nav h1 {
 }
 header .name-nav h2 {
   font-weight: 200;
-  margin-top: -40px;
+  margin-top: -30px;
   color: rgba(216, 251, 255, 0.6745098039);
 }
 header .name-nav nav {
@@ -76,6 +77,7 @@ header .name-nav nav .link-line {
   width: 30px;
   margin-right: 10px;
   display: inline-flex;
+  transition: width 300ms;
 }
 header .name-nav nav a {
   font-size: 0.75rem;
@@ -108,6 +110,16 @@ header .name-nav nav a:active {
 header .name-nav .social-list {
   display: flex;
 }
+header .name-nav .social-list li {
+  margin-right: 20px;
+}
+header .name-nav .social-list a {
+  color: #f0fdf9;
+  font-size: 2rem;
+}
+header .name-nav .social-list a:hover {
+  color: #5eeace;
+}
 
 main {
   width: 50%;
@@ -117,19 +129,25 @@ main {
   color: rgba(216, 251, 255, 0.6745098039);
 }
 
+#experience {
+  margin-top: 96px;
+}
+
 .card {
   display: grid;
   grid-template-columns: 1fr 2fr;
   column-gap: 20px;
   grid-template-rows: 1fr auto;
-  border: 1px solid #ccfbef;
-  padding: 10px;
+  padding: 20px;
   border-radius: 10px;
   margin: 20px 0;
   color: rgba(216, 251, 255, 0.6745098039);
+  background-color: rgba(3, 48, 73, 0.2901960784);
+  box-shadow: rgba(3, 114, 155, 0.22) 0px 1px 3px 0px, rgba(3, 114, 155, 0.222) 0px 1px 2px 0px;
 }
 .card h4 {
-  margin-top: 10px;
+  font-weight: 400;
+  margin: 8px 0;
   color: rgba(234, 254, 255, 0.8784313725);
 }
 .card .experience-date {
@@ -139,9 +157,32 @@ main {
 .card .experience-description {
   font-size: 0.75rem;
 }
+.card .project-image {
+  max-width: 124px;
+  border-radius: 5px;
+  border: 2px solid rgba(204, 251, 239, 0.7058823529);
+  margin-top: 10px;
+}
 .card ul {
   display: flex;
   flex-wrap: wrap;
+}
+.card .visit {
+  font-size: 0.69rem;
+  letter-spacing: 2px;
+  color: #f0fdf9;
+  border-radius: 12px;
+  margin: 5px 10px 0 0;
+}
+.card i {
+  transition: transform ease 300ms;
+}
+.card .visit:hover {
+  color: #5eeace;
+}
+.card .visit:hover i {
+  color: #5eeace;
+  transform: translateY(-2px) translateX(2px);
 }
 
 .tech-stack {
@@ -150,7 +191,12 @@ main {
   background-color: rgba(17, 94, 86, 0.5137254902);
   color: #5eeace;
   border-radius: 12px;
-  margin: 5px 5px;
+  margin: 5px 5px 5px 0;
+}
+
+#projects {
+  margin: 96px 0;
+  overflow-y: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
