@@ -183,6 +183,24 @@ main {
 
 #experience {
   margin-top: 96px;
+
+  .resume {
+    color: $seagull-50;
+    text-align: none;
+  }
+  
+  i {
+    transition: transform ease 300ms;
+  }
+
+  .resume:hover {
+    color: $turquoise-300;
+    i {
+      color: $turquoise-300;
+      transform: translateX(4px);
+    }
+  }
+
 }
 
 .card {

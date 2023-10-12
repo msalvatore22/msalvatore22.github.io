@@ -132,6 +132,20 @@ main {
 #experience {
   margin-top: 96px;
 }
+#experience .resume {
+  color: rgba(234, 254, 255, 0.8784313725);
+  text-align: none;
+}
+#experience i {
+  transition: transform ease 300ms;
+}
+#experience .resume:hover {
+  color: #5eeace;
+}
+#experience .resume:hover i {
+  color: #5eeace;
+  transform: translateX(4px);
+}
 
 .card {
   display: grid;
