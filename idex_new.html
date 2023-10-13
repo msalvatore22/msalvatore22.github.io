@@ -54,7 +54,7 @@
 			</div>
 		</header>
 		<main>
-			<section id="about">
+			<section id="about" class="nav-section">
 				<div>
 					<p>
 						Fell in love with programming in the fall of 2017 when I built my first website using HTML, CSS and JavaScript.
@@ -68,7 +68,7 @@
 					</p>
 				</div>
 			</section>
-			<section id="experience">
+			<section id="experience" class="nav-section">
 				<div class="card">
 					<p class="experience-date">MAY 2022 — SEP 2023</p>
 					<div>
@@ -132,7 +132,53 @@
 				</div>
 				<a class="resume" href="pdf/resume.pdf">View Full Resume <i class="fa-solid fa-arrow-right"></i></a>	
 			</section>
-			<section id="projects">
+			<section id="projects" class="nav-section">
+				<div class="card">
+					<img class="project-image" src="images/devlinks-home.png" />
+
+					<div>
+						<h4>Devlinks</h4>
+						<ul>
+							<li>
+								<a class="visit" href="https://devlinks-rose.vercel.app/" target="_blank">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+							<li>
+								<a class="visit" href="https://github.com/msalvatore22/devlinks" target="_blank">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+						</ul>
+						<p class="experience-description">
+							Single page application for creating and sharing relevant links to others as a software developer.
+							Frontend built with React & Typescript with Firebase as backend.
+							Responsive design implemented with Tailwind & Daisy UI, React DnD, React-Toastify. 
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">Typescript</div>
+							</li>
+							<li>
+								<div class="tech-stack">React</div>
+							</li>
+							<li>
+								<div class="tech-stack">React DnD</div>
+							</li>
+							<li>
+								<div class="tech-stack">React-Toastify</div>
+							</li>
+							<li>
+								<div class="tech-stack">React Hook Form</div>
+							</li>
+							<li>
+								<div class="tech-stack">Firebase</div>
+							</li>
+							<li>
+								<div class="tech-stack">Tailwind</div>
+							</li>
+							<li>
+								<div class="tech-stack">Daisy UI</div>
+							</li>
+						</ul>
+					</div>
+				</div>
 				<div class="card">
 					<img class="project-image" src="images/react-tip-calculator.png" />
 
@@ -147,7 +193,7 @@
 							</li>
 						</ul>
 						<p class="experience-description">
-							Single page application used to calculate the tip split amongst several people. 
+							React component for calculating the tip split amongst several people. 
 							Responsive design implemented with vanilla CSS and media queries.
 						</p>
 						<ul>
@@ -177,7 +223,7 @@
 							</li>
 						</ul>
 						<p class="experience-description">
-							React component used calculate an age of a person given a birth date. 
+							React component for calculating an age of a person given a birth date. 
 							Responsive design implemented with vanilla CSS and media queries.
 						</p>
 						<ul>
@@ -253,30 +299,51 @@
 				</div>
 
 			</section>
-
+			<section>
+				<p>MICHAEL SALVATORE <span class="copyright"><i class="far fa-copyright"></i> 2023</span></p>
+			</section>
 			
     	</main>
 		</div>
 	</div>
 
 <script>
-	let navLinks = document.querySelectorAll(".nav-link")
-	navLinks.forEach(nl => {
-		nl.addEventListener("click", event => {
-			const current = document.querySelector('.active')
-			current.classList.remove('active')
-			nl.classList.add("active")
-		})
-	})
-	navLinks.forEach(nl => {
-		nl.addEventListener("click", event => {
-			event.preventDefault()
+
+	const makeNavLinksSmooth = ( ) => {
+		const navLinks = document.querySelectorAll( '.nav-link' );
+
+		for ( let n in navLinks ) {
+			if ( navLinks.hasOwnProperty( n ) ) {
+				navLinks[ n ].addEventListener( 'click', e => {
+					e.preventDefault( );
+					document.querySelector( navLinks[ n ].hash )
+					.scrollIntoView( {
+						behavior: "smooth",
+						block: "start"
+					} );
+				} );
+			}
+		}
+	}
+	const spyScrolling = ( ) => {
+		const sections = document.querySelectorAll( '.nav-section' );
+
+		window.onscroll = ( ) => {
 			
-			document.querySelector(nl.getAttribute("href")).scrollIntoView({
-				behavior: "smooth", block: "center", inline: "nearest"
-			})
-		})
-	})
+			const marginPadding = 144
+			const scrollPos = document.documentElement.scrollTop + marginPadding
+			
+			for ( let s in sections )
+				if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
+					const id = sections[ s ].id;
+					document.querySelector( '.active' ).classList.remove( 'active' );
+					document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
+				}
+		} 
+	}
+
+	makeNavLinksSmooth()
+	spyScrolling()
 
 </script>
 </body>

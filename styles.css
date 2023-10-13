@@ -127,10 +127,12 @@ main {
 
 #about {
   color: rgba(216, 251, 255, 0.6745098039);
+  scroll-margin-top: 144px;
 }
 
 #experience {
   margin-top: 96px;
+  scroll-margin-top: 144px;
 }
 #experience .resume {
   color: rgba(234, 254, 255, 0.8784313725);
@@ -209,8 +211,8 @@ main {
 }
 
 #projects {
-  margin: 96px 0;
-  overflow-y: hidden;
+  margin-top: 96px;
+  scroll-margin-top: 144px;
 }
 
 /*# sourceMappingURL=styles.css.map */

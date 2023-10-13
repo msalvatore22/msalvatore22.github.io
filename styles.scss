@@ -179,10 +179,12 @@ main {
 
 #about {
   color: $seagull-100;
+  scroll-margin-top: 144px;
 }
 
 #experience {
   margin-top: 96px;
+  scroll-margin-top: 144px;
 
   .resume {
     color: $seagull-50;
@@ -276,6 +278,6 @@ main {
 }
 
 #projects {
-  margin: 96px 0;
-  overflow-y: hidden;
+  margin-top: 96px;
+  scroll-margin-top: 144px;
 }
