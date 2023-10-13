@@ -155,10 +155,10 @@ main {
   transition: transform ease 300ms;
 }
 #experience .resume:hover {
-  color: #5eeace;
+  color: #5be9ff;
 }
 #experience .resume:hover i {
-  color: #5eeace;
+  color: #5be9ff;
   transform: translateX(4px);
 }
 
@@ -192,7 +192,7 @@ main {
 .card .card-image {
   max-width: 124px;
   border-radius: 5px;
-  border: 2px solid rgba(204, 251, 239, 0.7058823529);
+  border: 2px solid rgba(216, 251, 255, 0.6745098039);
   margin-top: 10px;
 }
 .card ul {
@@ -202,7 +202,7 @@ main {
 .card .visit {
   font-size: 0.69rem;
   letter-spacing: 2px;
-  color: #f0fdf9;
+  color: rgba(234, 254, 255, 0.9411764706);
   border-radius: 12px;
   margin-right: 10px;
 }
@@ -210,18 +210,18 @@ main {
   transition: transform ease 300ms;
 }
 .card .visit:hover {
-  color: #5eeace;
+  color: #5be9ff;
 }
 .card .visit:hover i {
-  color: #5eeace;
+  color: #5be9ff;
   transform: translateY(-2px) translateX(2px);
 }
 
 .tech-stack {
   font-size: 0.75rem;
   padding: 5px 7px;
-  background-color: rgba(17, 94, 86, 0.5137254902);
-  color: #5eeace;
+  background-color: rgba(13, 91, 125, 0.4470588235);
+  color: #5be9ff;
   border-radius: 12px;
   margin: 5px 5px 5px 0;
 }
@@ -237,6 +237,7 @@ main {
 }
 #created-by p {
   margin-bottom: 0;
+  font-size: 0.75rem;
 }
 
 @media (max-width: 1024px) {

@@ -1,34 +1,23 @@
-$seagull-50: #eafefff0;
-$seagull-100: #d8fbffac;
-$seagull-200: #9ef4ff;
-$seagull-300: #5be9ff;
-$seagull-400: #0ad2ff;
-$seagull-500: #00b6e5;
-$seagull-600: #0090c0;
-$seagull-700: rgb(3, 114, 155);
-$seagull-800: #0d5c7d;
-$seagull-900: rgb(16, 76, 105);
-$seagull-950: #021a27;
-$seagull-1000: #011621;
+$primary-50: #eafefff0;
+$primary-100: #d8fbffac;
+$primary-200: #9ef4ff;
+$primary-300: #5be9ff;
+$primary-400: #0ad2ff;
+$primary-500: #00b6e5;
+$primary-600: #0090c0;
+$primary-700: rgb(3, 114, 155);
+$primary-800: #0d5b7d72;
+$primary-900: rgb(16, 76, 105);
+$primary-950: #021a27;
+$primary-1000: #011621;
 
-$turquoise-50: #f0fdf9;
-$turquoise-100: #ccfbefb4;
-$turquoise-200: #99f6e0;
-$turquoise-300: #5eeace;
-$turquoise-400: #34d5ba;
-$turquoise-500: #14b89f;
-$turquoise-600: #0ea28fa7;
-$turquoise-700: #0f766a;
-$turquoise-800: #115e5683;
-$turquoise-900: #134e48;
-$turquoise-950: #042f2c;
 
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
-  background-color: $seagull-1000;
-  color: $seagull-50;
+  background-color: $primary-1000;
+  color: $primary-50;
   scroll-behavior: smooth;
 }
 
@@ -86,7 +75,7 @@ header {
     h2 {
       font-weight: 200;
       margin-top: -30px;
-      color: $seagull-100
+      color: $primary-100
     }
 
     nav {
@@ -97,16 +86,16 @@ header {
       }
       
       li:hover {
-        color: $seagull-50
+        color: $primary-50
       }
 
       .active {
         span {
-          color: $seagull-50
+          color: $primary-50
         }
 
         .link-line {
-          border-top: 1px solid $seagull-50;
+          border-top: 1px solid $primary-50;
           width: 60px;
           margin-right: 10px;
           display: inline-flex;
@@ -114,7 +103,7 @@ header {
       }
 
       .link-line {
-        border-top: 1px solid $seagull-100;
+        border-top: 1px solid $primary-100;
         width: 30px;
         margin-right: 10px;
         display: inline-flex;
@@ -130,20 +119,20 @@ header {
 
       a:link {
         text-decoration: none;
-        color: $seagull-100;
+        color: $primary-100;
       }
 
       a:visited {
         text-decoration: none;
-        color: $seagull-100;
+        color: $primary-100;
       }
 
       a:hover {
         text-decoration: none;
-        color: $seagull-50;
+        color: $primary-50;
 
         .link-line {
-          border-top: 1px solid $seagull-50;
+          border-top: 1px solid $primary-50;
           width: 60px;
           margin-right: 10px;
           display: inline-flex;
@@ -152,7 +141,7 @@ header {
 
       a:active {
         text-decoration: none;
-        color: $seagull-50;
+        color: $primary-50;
       }
 
     }
@@ -165,12 +154,12 @@ header {
       }
 
       a {
-        color: $seagull-100;
+        color: $primary-100;
         font-size: 2rem;
       }
 
       a:hover {
-        color: $seagull-50;
+        color: $primary-50;
       }
     }
 
@@ -183,7 +172,7 @@ main {
 }
 
 #about {
-  color: $seagull-100;
+  color: $primary-100;
   scroll-margin-top: 96px;
 
   p:first-child {
@@ -201,7 +190,7 @@ main {
   scroll-margin-top: 96px;
 
   .resume {
-    color: $seagull-50;
+    color: $primary-50;
     text-align: none;
   }
   
@@ -210,9 +199,9 @@ main {
   }
 
   .resume:hover {
-    color: $turquoise-300;
+    color: $primary-300;
     i {
-      color: $turquoise-300;
+      color: $primary-300;
       transform: translateX(4px);
     }
   }
@@ -227,14 +216,14 @@ main {
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
-    color: $seagull-100;
-    background-color: $seagull-950;
+    color: $primary-100;
+    background-color: $primary-950;
     box-shadow: rgb(16, 76, 105, 0.25) 0px 10px 15px -6px inset;
   
   h4 {
     font-weight: 400;
     margin: 0 0 8px 0;
-    color: $seagull-50;
+    color: $primary-50;
   }
 
   p {
@@ -253,7 +242,7 @@ main {
   .card-image {
     max-width: 124px;
     border-radius: 5px;
-    border: 2px solid $turquoise-100;
+    border: 2px solid $primary-100;
     margin-top: 10px;
   }
 
@@ -265,7 +254,7 @@ main {
   .visit {
     font-size: .69rem;
     letter-spacing: 2px;
-    color: $turquoise-50;
+    color: $primary-50;
     border-radius: 12px;
     margin-right: 10px;
   }
@@ -275,10 +264,10 @@ main {
   }
 
   .visit:hover {
-    color: $turquoise-300;
+    color: $primary-300;
 
     i {
-      color: $turquoise-300;
+      color: $primary-300;
       transform: translateY(-2px) translateX(2px);
     }
   }
@@ -288,8 +277,8 @@ main {
 .tech-stack {
   font-size: .75rem;
   padding: 5px 7px;
-  background-color: $turquoise-800;
-  color: $turquoise-300;
+  background-color: $primary-800;
+  color: $primary-300;
   border-radius: 12px;
   margin: 5px 5px 5px 0;
 }
@@ -301,10 +290,11 @@ main {
 
 #created-by {
   margin-top: 96px;
-  color: $seagull-100;
+  color: $primary-100;
 
   p {
     margin-bottom: 0;
+    font-size: .75rem;
   }
 }
 
@@ -334,7 +324,7 @@ main {
 
   .section-header {
     display: inline-block;
-    color: $seagull-50;
+    color: $primary-50;
     letter-spacing: 2px;
   }
 
@@ -356,5 +346,5 @@ main {
   .tech-stack {
     font-size: 1rem;
   }
-  
+
 }
