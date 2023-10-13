@@ -1,232 +1,348 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<meta name="viewport" content="width=device-width">
-	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/e1b3fabcea.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/logo.png" type="image" sizes="16x16">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
 	<meta property="og:image" content="https://michaelsalvatore.me/images/portfoliopage.png" />
 	<meta property="og:title" content="Michael Salvatore" />
 	<meta property="og:description" content="Michael Salvatore's Portfolio Page"/>
 	<meta property="og:url" content="https://michaelsalvatore.me/" />
 	<title>Michael Salvatore</title>
 </head>
-	<body>
-		<div id="hamburger-menu-wrapper">
-			<div class="hamburger">
-				<span class="line top"></span>
-				<span class="line middle"></span>
-				<span class="line bottom"></span>
+<body>
+	<div class="container">
+		<div class="columns">
+		<header>
+			<div class="name-nav">
+				<div>
+					<h1>Michael Salvatore</h1>
+					<h2>Software Egineer</h2>
+					<nav>
+						<ul>
+							<li>
+								<a class="nav-link active" href="#about">
+									<span class="link-line"></span>
+									<span>ABOUT</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#experience">
+									<span class="link-line"></span>
+									<span>EXPERIENCE</span>
+								</a>
+							</li>
+							<li>
+								<a class="nav-link" href="#projects">
+									<span class="link-line"></span>
+									<span>PROJECTS</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<ul class="social-list">
+					<li><a href="https://github.com/msalvatore22/" target="_blank"><i class="fa-brands fa-github"></i></li>
+					<li><a href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li><a href="https://codepen.io/msalvatore22/" target="_blank"><i class="fa-brands fa-codepen"></i></a></li>
+					<li><a href="https://www.instagram.com/michaeljsalvatore/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+				</ul>
 			</div>
-		</div>
-		<div id="hamburger-menu">
-			<h1 class="hamburger-nav" data-nav="home">HOME</h1>
-			<h1 class="hamburger-nav" data-nav="portfolio">PROJECTS</h1>
-			<h1 class="hamburger-nav" data-nav="about">ABOUT</h1>
-			<h1 class="hamburger-nav" data-nav="contact">CONTACT</h1>
-		</div>
-		<div id="home">
-			<div class="section-title waypoint" data-animation="zoomIn">
-				<h1>MICHAEL SALVATORE</h1>
-				<div class="underline"></div>
-				<h1>SOFTWARE ENGINEER</h1>
-			</div>
-			<p id="view-work" class="waypoint" data-animation="flipInX" data-delay="1s">VIEW MY WORK <i id="face" class="far fa-smile"></i></p>
-		</div>
-		<div id="portfolio">
-			<div class="section-title">
-				<h1 class="waypoint" data-animation="fadeInRight">PROJECTS</h1>
-				<div class="underline waypoint" data-animation="fadeInRight" data-delay=".25s"></div>
-			</div>
-			<div class="portfolio-images">
-				<div class="image-container">
-					<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".25s" src="images/portfolio.png" />
-					<div class="image-overlay">
-						<div class="image-text text-top">Personal Website</div>
-						<div class="image-text text-middle">HTML + CSS + jQuery</div>
-						<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalOne">MORE INFO</button></div>
-					</div>
-					<div id="modalOne" class="modal-container">
-						<div class="modal-content">
-							<span class="close"><i class="far fa-times-circle"></i></span>
-							<h2>Personal Website</h2>
-							<p class="stack">HTML | CSS | jQuery</p>
-							<p class="description">Personal website built with HTML, CSS and jQuery. Displays projects, about me and way to contact.</p>
-							<a class="visit" href="https://msalvatore22.github.io target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-							<a class="visit" href="https://github.com/msalvatore22/msalvatore22.github.io" target="_blank">GitHub <i class="fab fa-github"></i></a>
-						</div>
-					</div>
+		</header>
+		<main>
+			<section id="about" class="nav-section">
+				<h1 class="section-header">ABOUT</h1>
+				<div>
+					<p>
+						Fell in love with programming in the fall of 2017 when I built my first website using HTML, CSS and JavaScript.
+					</p>
+					<p>
+						Continued my self-taught journey building a portfolio of projects and completed a coding bootcamp in NYC. 
+						Landed my first programming job at MUFG doing backend microservices development.
+					</p>
+					<p>
+						Compentencies: Python, JavaScript, React, PostgreSQL, MongoDB, NodeJS, Flask, Django, Docker
+					</p>
 				</div>
-				<div class="image-container">
-					<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".25s" src="images/react-debt-payoff.png" />
-					<div class="image-overlay">
-						<div class="image-text text-top">Debt Payoff</div>
-						<div class="image-text text-middle">React + Material UI + Chart.js</div>
-						<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalTwo">MORE INFO</button></div>
-					</div>
-					<div id="modalTwo" class="modal-container">
-						<div class="modal-content">
-							<span class="close"><i class="far fa-times-circle"></i></span>
-							<h2>Debt Payoff</h2>
-							<p class="stack">React | Material UI | Chart.js</p>
-							<p class="description">Calculate the time to pay off debt by inputing required values into form. Implemented Chart.js to vizualize the results of the debt payoff algorithm.</p>
-							<a class="visit" href="https://msalvatore22.github.io/React-Debt-Payoff/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-							<a class="visit" href="https://github.com/msalvatore22/React-Debt-Payoff" target="_blank">GitHub <i class="fab fa-github"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="image-container">
-					<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".5s" src="images/rello.png" />
-					<div class="image-overlay">
-						<div class="image-text text-top">Rello</div>
-						<div class="image-text text-middle">React + Redux</div>
-						<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalThree">MORE INFO</button></div>
-					</div>
-					<div id="modalThree" class="modal-container">
-						<div class="modal-content">
-							<span class="close"><i class="far fa-times-circle"></i></span>
-							<h2>Rello</h2>
-							<p class="stack">React | Redux | Redux Undo | Local Storage</p>
-							<p class="description">Rello is an interactive React + Redux kanban board similar to Trello. State is persisted to browser local storage. Redo and undo functionality implemented with Redux.</p>
-							<a class="visit" href="https://react-redux-kanban.surge.sh/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-							<a class="visit" href="https://github.com/msalvatore22/React-Redux-Kanban" target="_blank">GitHub <i class="fab fa-github"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="image-container">
-						<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay=".75s" src="images/react-sorting-visualizer.png" />
-					<div class="image-overlay">
-						<div class="image-text text-top">Sorting Visualizer</div>
-						<div class="image-text text-middle">React</div>
-						<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalFour">MORE INFO</button></div>
-					</div>
-					<div id="modalFour" class="modal-container">
-						<div class="modal-content">
-							<span class="close"><i class="far fa-times-circle"></i></span>
-							<h2>Sorting Visualizer</h2>
-							<p class="stack">React</p>
-							<p class="description">Visualize sorting algorithms implemented in React.</p>
-							<a class="visit" href="https://msalvatore22.github.io/react-sorting-visualizer/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-							<a class="visit" href="https://github.com/msalvatore22/react-sorting-visualizer" target="_blank">GitHub <i class="fab fa-github"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="image-container">
-					<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay="1s" src="images/react-tip-calculator.png" />
-					<div class="image-overlay">
-						<div class="image-text text-top">Tip Calculator</div>
-						<div class="image-text text-middle">React + Zustand</div>
-						<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalFive">MORE INFO</button></div>
-					</div>
-					<div id="modalFive" class="modal-container">
-						<div class="modal-content">
-							<span class="close"><i class="far fa-times-circle"></i></span>
-							<h2>Tip Calculator</h2>
-							<p class="stack">React | Zustand</p>
-							<p class="description">Tip calculator component with Zustand state managment.</p>
-							<a class="visit" href="https://msalvatore22.github.io/Tip-Calculator/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-							<a class="visit" href="https://github.com/msalvatore22/Tip-Calculator" target="_blank">GitHub <i class="fab fa-github"></i></a>
-						</div>
-					</div>
-				</div>
-				<div class="image-container">
-					<img class="portfolio-image waypoint" data-animation="fadeInUp" data-delay="1s" src="images/react-age-calculator.png" />
-					<div class="image-overlay">
-						<div class="image-text text-top">Age Calculator</div>
-						<div class="image-text text-middle">React</div>
-						<div class="image-text text-bottom"><button class="modal-btn" data-modal="modalSix">MORE INFO</button></div>
-					</div>
-					<div id="modalSix" class="modal-container">
-						<div class="modal-content">
-							<span class="close"><i class="far fa-times-circle"></i></span>
-							<h2>Age Calculator</h2>
-							<p class="stack">React</p>
-							<p class="description">Age calculator component. Conditional styling for form validaton.</p>
-							<a class="visit" href="https://msalvatore22.github.io/Age-Calculator/" target="_blank">Website <i class="fas fa-external-link-alt"></i></a>
-							<a class="visit" href="https://github.com/msalvatore22/Age-Calculator" target="_blank">GitHub <i class="fab fa-github"></i></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="about">
-			<div class="section-title">
-				<h1 class="waypoint" data-animation="fadeInLeft">ABOUT</h1>
-				<div class="underline waypoint" data-animation="fadeInLeft" data-delay=".25s"></div>
-			</div>
-			<div class="skills1">
-					<div class="about-icons waypoint" data-animation="fadeInRight" data-delay=".5s">
-						<img class="michael-img" src="images/IMG_8252.jpeg" alt="Michael Portrait">
-					</div>
-					<div class="about-content waypoint" data-animation="fadeInRight" data-delay=".5s">
-						<p>
-							Fell in love with programming in the fall of 2017 when I built my first website using HTML, CSS and JavaScript.
+			</section>
+			<section id="experience" class="nav-section">
+				<h1 class="section-header">EXPERIENCE</h1>
+				<div class="card">
+					<p class="card-date">MAY 2022 — SEP 2023</p>
+					<div>
+						<h4>Software Engineer VP • MUFG</h4>
+						<p class="card-description">
+							Designed and developed microservices for an automated business intelligence data platform utilizing Python, PostgreSQL, Docker and Openshift.
 						</p>
-						<p>
-							Continued my self-taught journey building a portfolio of projects, completed a coding bootcamp in NYC and landed my current position as Software Engineer VP doing microserivces development.
-						</p>
-						<p>
-							Compentencies: Python, JavaScript, React, PostgreSQL, MongoDB, NodeJS, Flask, Django, Docker
-						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">Python</div>
+							</li>
+							<li>
+								<div class="tech-stack">FastAPI</div>
+							</li>
+							<li>
+								<div class="tech-stack">PostgreSQL</div>
+							</li>
+							<li>
+								<div class="tech-stack">SQLAlchemy</div>
+							</li>
+							<li>
+								<div class="tech-stack">Docker</div>
+							</li>
+							<li>
+								<div class="tech-stack">Openshift</div>
+							</li>
+						</ul>
+
 					</div>
-			</div>
-			<div class="section-title">
-				<h2 class="waypoint" data-animation="fadeInRight" data-delay="1.25s">TECHNOLOGIES</h2>
-				<div class="underline waypoint" data-animation="fadeInRight" data-delay="1.25s"></div>
-			</div>
-			<div class="skills2">
-				<i style="color: #F0D53B" class="waypoint fab fa-js-square" data-animation="rotateInUpRight" data-delay="3.0s"></i>
-				<i style="color: #3C79AA" class="waypoint fab fa-python" data-animation="rotateInUpRight" data-delay="2.75s"></i>
-				<i style="color: #5DD3F3" class="waypoint fab fa-react" data-animation="rotateInUpRight" data-delay="2.5s"></i>
-				<i style="color: #3595CF" class="waypoint fab fa-css3-alt" data-animation="rotateInUpRight" data-delay="2.25s"></i>
-				<i style="color: #E75E27" class="waypoint fab fa-html5" data-animation="rotateInUpRight" data-delay="2.0s"></i>
-				<i style="color: #84C043" class="waypoint fab fa-node-js" data-animation="rotateInUpRight" data-delay="1.5s"></i>
-				<i style="color: #30628B" class="waypoint fas fa-database" data-animation="rotateInUpRight" data-delay="1.25s"></i>
-				<i style="color: #2672E2" class="waypoint fab fa-docker" data-animation="rotateInUpRight" data-delay="1.25s"></i>
-			</div>
-		</div>
-		<div id="contact">
-			<div class="section-title">
-				<h1 class="waypoint" data-animation="fadeInRight">CONTACT</h1>
-				<div class="underline waypoint" data-animation="fadeInLeft" data-delay=".5s"></div>
-			</div>
-			<div class="contact-message waypoint" data-animation="fadeInDown" data-delay=".5s">
-				<p>Need a software engineer? Let's work together!</p>
-			</div>
-			<div class="contact-form-container waypoint" data-animation="flipInX" data-delay="1s">
-				<form class="contact-form" action="https://formspree.io/msalvatore22@gmail.com" method="POST">
-					<input type="text" name="name" placeholder="Name" required>
-					<input type="hidden" name="_subject" value="Website contact" />
-					<input type="text" name="_gotcha" style="display:none" />
-					<input type="email" name="_replyto" placeholder="Email" required>
-					<textarea type="text" name="body" placeholder="Message" required></textarea>
-					<input id="submit" type="submit" value="SEND">
-				</form>
-			</div>
-			<button id="to-top">
-					<i class="fas fa-angle-double-up"></i>
-			</button>
-		</div>
-		<div id="footer">
-			<div class="icon-links waypoint" data-animation="fadeInDown" data-delay="1.15s">
-				<a href="https://www.linkedin.com/in/msalvatore22/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-				<a href="https://github.com/msalvatore22/" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="https://codepen.io/msalvatore22/" target="_blank"><i class="fab fa-codepen"></i></a>
-				<a href="https://www.freecodecamp.org/certification/msalvatore22/front-end-libraries" target="_blank"><i class="fab fa-free-code-camp"></i></i></a>
-			</div>
+				</div>
+				<div class="card">
+					<p class="card-date">JULY 2019 — MAY 2022</p>
+
+					<div>
+						<h4>Software Engineer AVP • MUFG</h4>
+						<p class="card-description">
+							Owned and executed data visualization products end to end from backend microservices development to the creation of data visualizations implemented in Tableau and Power BI.
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">Python</div>
+							</li>
+							<li>
+								<div class="tech-stack">PostgreSQL</div>
+							</li>
+							<li>
+								<div class="tech-stack">Docker</div>
+							</li>
+							<li>
+								<div class="tech-stack">Openshift</div>
+							</li>
+							<li>
+								<div class="tech-stack">Tableau</div>
+							</li>
+							<li>
+								<div class="tech-stack">PowerBI</div>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+				<a class="resume" href="pdf/resume.pdf">View Full Resume <i class="fa-solid fa-arrow-right"></i></a>	
+			</section>
+			<section id="projects" class="nav-section">
+				<h1 class="section-header">PROJECTS</h1>
+				<div class="card">
+					<img class="card-image" src="images/devlinks-home.png" />
+
+					<div>
+						<h4>Devlinks</h4>
+						<ul>
+							<li>
+								<a class="visit" href="https://devlinks-rose.vercel.app/" target="_blank">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+							<li>
+								<a class="visit" href="https://github.com/msalvatore22/devlinks" target="_blank">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+						</ul>
+						<p class="card-description">
+							Single page application for creating and sharing relevant links to others as a software developer.
+							Frontend built with React & Typescript with Firebase as backend.
+							Responsive design implemented with Tailwind & Daisy UI, React DnD, React-Toastify. 
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">Typescript</div>
+							</li>
+							<li>
+								<div class="tech-stack">React</div>
+							</li>
+							<li>
+								<div class="tech-stack">Firebase</div>
+							</li>
+							<li>
+								<div class="tech-stack">Tailwind</div>
+							</li>
+							<li>
+								<div class="tech-stack">Daisy UI</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-image" src="images/react-tip-calculator.png" />
+
+					<div>
+						<h4>Tip Calculator</h4>
+						<ul>
+							<li>
+								<a class="visit" href="https://msalvatore22.github.io/Tip-Calculator/" target="_blank">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+							<li>
+								<a class="visit" href="https://github.com/msalvatore22/Tip-Calculator" target="_blank">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+						</ul>
+						<p class="card-description">
+							React component for calculating the tip split amongst several people. 
+							Responsive design implemented with vanilla CSS and media queries.
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">React</div>
+							</li>
+							<li>
+								<div class="tech-stack">Zustand</div>
+							</li>
+							<li>
+								<div class="tech-stack">CSS</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-image" src="images/react-age-calculator.png" />
+
+					<div>
+						<h4>Age Calculator</h4>
+						<ul>
+							<li>
+								<a class="visit" href="https://msalvatore22.github.io/Age-Calculator/" target="_blank">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+							<li>
+								<a class="visit" href="https://github.com/msalvatore22/Age-Calculator" target="_blank">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+						</ul>
+						<p class="card-description">
+							React component for calculating an age of a person given a birth date. 
+							Responsive design implemented with vanilla CSS and media queries.
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">React</div>
+							</li>
+							<li>
+								<div class="tech-stack">CSS</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-image" src="images/react-debt-payoff.png" />
+
+					<div>
+						<h4>Debt Calculator</h4>
+						<ul>
+							<li>
+								<a class="visit" href="https://msalvatore22.github.io/React-Debt-Payoff/" target="_blank">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+							<li>
+								<a class="visit" href="https://github.com/msalvatore22/React-Debt-Payoff" target="_blank">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+						</ul>
+						<p class="card-description">
+							React component used calculate and visualize the time to pay off debts.
+							Enter debt information into form and see the results rendered in a table and burn down chart.
+							Responsive design implemented Material UI and charting with Chart.js
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">React</div>
+							</li>
+							<li>
+								<div class="tech-stack">Material UI</div>
+							</li>
+							<li>
+								<div class="tech-stack">Chart.js</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="card">
+					<img class="card-image" src="images/rello.png" />
+
+					<div>
+						<h4>React / Redux Kanban</h4>
+						<ul>
+							<li>
+								<a class="visit" href="https://msalvatore22.github.io/React-Debt-Payoff/" target="_blank">LIVE <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+							<li>
+								<a class="visit" href="https://github.com/msalvatore22/React-Debt-Payoff" target="_blank">GITHUB <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+							</li>
+						</ul>
+						<p class="card-description">
+							Simple kanban board implemented with React and Redux.
+							Redo and undo changes accomplished using redux-undo package and local storage.
+						</p>
+						<ul>
+							<li>
+								<div class="tech-stack">React</div>
+							</li>
+							<li>
+								<div class="tech-stack">Redux</div>
+							</li>
+							<li>
+								<div class="tech-stack">Redux-Undo</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+			</section>
+			<section id="created-by">
+				<p>
+					Michael Salvatore 2023
+					<br>
+					Built using HTML, Sass and JavaScript
+				</p>
+			</section>
 			
-			<p>MICHAEL SALVATORE <span class="copyright"><i class="far fa-copyright"></i> 2023</span></p>
+    	</main>
 		</div>
+	</div>
 
+	<script>
 
+		const makeNavLinksSmooth = ( ) => {
+			const navLinks = document.querySelectorAll( '.nav-link' );
 
-	<script type="text/javascript" src="js/main.js"></script>
-</body>
+			for ( let n in navLinks ) {
+				if ( navLinks.hasOwnProperty( n ) ) {
+					navLinks[ n ].addEventListener( 'click', e => {
+						e.preventDefault( );
+						document.querySelector( navLinks[ n ].hash )
+						.scrollIntoView( {
+							behavior: "smooth",
+							block: "start"
+						} );
+					} );
+				}
+			}
+		}
+		const spyScrolling = ( ) => {
+			const sections = document.querySelectorAll( '.nav-section' );
 
+			window.onscroll = ( ) => {
+				
+				const marginPadding = 96
+				const scrollPos = document.documentElement.scrollTop + marginPadding
+				
+				for ( let s in sections )
+					if ( sections.hasOwnProperty( s ) && sections[s].offsetTop <= scrollPos ) {
+						const id = sections[s].id;
+						document.querySelector('.active').classList.remove( 'active' );
+						document.querySelector(`a[href*=${ id }]`).classList.add( 'active' );
+					}
+			} 
+		}
 
+		makeNavLinksSmooth()
+		spyScrolling()
+
+	</script>
+	</body>
 </html>
-

@@ -3,7 +3,7 @@ body, html {
   padding: 0;
   font-family: "Poppins", sans-serif;
   background-color: #011621;
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
   scroll-behavior: smooth;
 }
 
@@ -32,14 +32,17 @@ p {
 .columns {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  width: 1056px;
-  padding: 96px 0;
+  width: 1024px;
+  padding: 96px;
+}
+
+.section-header {
+  display: none;
+  font-size: 1.6rem;
 }
 
 header {
   width: 50%;
-  max-height: 100vh;
 }
 header .name-nav {
   position: fixed;
@@ -50,7 +53,7 @@ header .name-nav {
   bottom: 96px;
 }
 header .name-nav h1 {
-  font-size: 50px;
+  font-size: 2.7rem;
   margin-top: -20px;
 }
 header .name-nav h2 {
@@ -65,13 +68,13 @@ header .name-nav nav li {
   margin: 12px 0;
 }
 header .name-nav nav li:hover {
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
 }
 header .name-nav nav .active span {
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
 }
 header .name-nav nav .active .link-line {
-  border-top: 1px solid rgba(234, 254, 255, 0.8784313725);
+  border-top: 1px solid rgba(234, 254, 255, 0.9411764706);
   width: 60px;
   margin-right: 10px;
   display: inline-flex;
@@ -99,17 +102,17 @@ header .name-nav nav a:visited {
 }
 header .name-nav nav a:hover {
   text-decoration: none;
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
 }
 header .name-nav nav a:hover .link-line {
-  border-top: 1px solid rgba(234, 254, 255, 0.8784313725);
+  border-top: 1px solid rgba(234, 254, 255, 0.9411764706);
   width: 60px;
   margin-right: 10px;
   display: inline-flex;
 }
 header .name-nav nav a:active {
   text-decoration: none;
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
 }
 header .name-nav .social-list {
   display: flex;
@@ -118,11 +121,11 @@ header .name-nav .social-list li {
   margin-right: 20px;
 }
 header .name-nav .social-list a {
-  color: #f0fdf9;
+  color: rgba(216, 251, 255, 0.6745098039);
   font-size: 2rem;
 }
 header .name-nav .social-list a:hover {
-  color: #5eeace;
+  color: rgba(234, 254, 255, 0.9411764706);
 }
 
 main {
@@ -136,13 +139,16 @@ main {
 #about p:first-child {
   margin-top: 0;
 }
+#about p {
+  font-size: 0.9rem;
+}
 
 #experience {
   margin-top: 96px;
   scroll-margin-top: 96px;
 }
 #experience .resume {
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
   text-align: none;
 }
 #experience i {
@@ -171,19 +177,19 @@ main {
 .card h4 {
   font-weight: 400;
   margin: 0 0 8px 0;
-  color: rgba(234, 254, 255, 0.8784313725);
+  color: rgba(234, 254, 255, 0.9411764706);
 }
 .card p {
-  margin-top: 0;
+  margin-top: 10px;
 }
-.card .experience-date {
+.card .card-date {
   font-size: 0.75rem;
   align-self: start;
 }
-.card .experience-description {
+.card .card-description {
   font-size: 0.75rem;
 }
-.card .project-image {
+.card .card-image {
   max-width: 124px;
   border-radius: 5px;
   border: 2px solid rgba(204, 251, 239, 0.7058823529);
@@ -198,7 +204,7 @@ main {
   letter-spacing: 2px;
   color: #f0fdf9;
   border-radius: 12px;
-  margin: 5px 10px 0 0;
+  margin-right: 10px;
 }
 .card i {
   transition: transform ease 300ms;
@@ -231,6 +237,48 @@ main {
 }
 #created-by p {
   margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .columns {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 48px;
+    gap: 120px;
+  }
+  header {
+    width: 100%;
+  }
+  header .name-nav {
+    position: relative;
+  }
+  header .name-nav nav {
+    display: none;
+  }
+  main {
+    width: 100%;
+  }
+  .section-header {
+    display: inline-block;
+    color: rgba(234, 254, 255, 0.9411764706);
+    letter-spacing: 2px;
+  }
+  .card {
+    column-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+  }
+  .card .card-image {
+    max-width: 300px;
+    grid-row-start: 2;
+  }
+  .card .visit {
+    font-size: 1rem;
+  }
+  .tech-stack {
+    font-size: 1rem;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

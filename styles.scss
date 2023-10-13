@@ -1,4 +1,4 @@
-$seagull-50: #eafeffe0;
+$seagull-50: #eafefff0;
 $seagull-100: #d8fbffac;
 $seagull-200: #9ef4ff;
 $seagull-300: #5be9ff;
@@ -57,14 +57,18 @@ p {
 .columns {
   display: flex;
   justify-content: center;
-  gap: 50px;
-  width: 1056px;
-  padding: 96px 0;
+  width: 1024px;
+  padding: 96px;
+}
+
+.section-header {
+  display: none;
+  font-size: 1.6rem;
 }
 
 header {
   width: 50%;
-  max-height: 100vh;
+
 
   .name-nav {
       position: fixed;
@@ -75,7 +79,7 @@ header {
       bottom: 96px;
 
     h1 {
-      font-size: 50px;
+      font-size: 2.7rem;
       margin-top: -20px;
     }
 
@@ -161,12 +165,12 @@ header {
       }
 
       a {
-        color: $turquoise-50;
+        color: $seagull-100;
         font-size: 2rem;
       }
 
       a:hover {
-        color: $turquoise-300;
+        color: $seagull-50;
       }
     }
 
@@ -184,6 +188,10 @@ main {
 
   p:first-child {
     margin-top: 0;
+  }
+
+  p {
+    font-size: .9rem;
   }
   
 }
@@ -230,19 +238,19 @@ main {
   }
 
   p {
-    margin-top: 0;
+    margin-top: 10px;
   }
 
-  .experience-date {
+  .card-date {
     font-size: .75rem;
     align-self: start;
   }
 
-  .experience-description {
+  .card-description {
     font-size: .75rem;
   }
 
-  .project-image {
+  .card-image {
     max-width: 124px;
     border-radius: 5px;
     border: 2px solid $turquoise-100;
@@ -259,8 +267,7 @@ main {
     letter-spacing: 2px;
     color: $turquoise-50;
     border-radius: 12px;
-    margin: 5px 10px 0 0;
-
+    margin-right: 10px;
   }
 
   i {
@@ -299,4 +306,55 @@ main {
   p {
     margin-bottom: 0;
   }
+}
+
+@media (max-width: 1024px){
+  .columns {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 48px;
+    gap: 120px;
+  }
+
+  header {
+    width: 100%;
+    .name-nav {
+      position: relative;
+
+      nav {
+        display: none;
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .section-header {
+    display: inline-block;
+    color: $seagull-50;
+    letter-spacing: 2px;
+  }
+
+  .card {
+    column-gap: 5px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto;
+
+      .card-image {
+        max-width: 300px;
+        grid-row-start: 2;
+      }
+
+      .visit { 
+        font-size: 1rem;
+      }
+  }
+
+  .tech-stack {
+    font-size: 1rem;
+  }
+  
 }
