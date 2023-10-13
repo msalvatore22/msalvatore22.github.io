@@ -3,9 +3,9 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/e1b3fabcea.js" crossorigin="anonymous"></script>
 	<link rel="icon" href="images/logo.png" type="image" sizes="16x16">
 	<meta property="og:image" content="https://michaelsalvatore.me/images/portfoliopage.png" />
@@ -299,52 +299,56 @@
 				</div>
 
 			</section>
-			<section>
-				<p>MICHAEL SALVATORE <span class="copyright"><i class="far fa-copyright"></i> 2023</span></p>
+			<section id="created-by">
+				<p>
+					Michael Salvatore 2023
+					<br>
+					Built using HTML, Sass and JavaScript
+				</p>
 			</section>
 			
     	</main>
 		</div>
 	</div>
 
-<script>
+	<script>
 
-	const makeNavLinksSmooth = ( ) => {
-		const navLinks = document.querySelectorAll( '.nav-link' );
+		const makeNavLinksSmooth = ( ) => {
+			const navLinks = document.querySelectorAll( '.nav-link' );
 
-		for ( let n in navLinks ) {
-			if ( navLinks.hasOwnProperty( n ) ) {
-				navLinks[ n ].addEventListener( 'click', e => {
-					e.preventDefault( );
-					document.querySelector( navLinks[ n ].hash )
-					.scrollIntoView( {
-						behavior: "smooth",
-						block: "start"
+			for ( let n in navLinks ) {
+				if ( navLinks.hasOwnProperty( n ) ) {
+					navLinks[ n ].addEventListener( 'click', e => {
+						e.preventDefault( );
+						document.querySelector( navLinks[ n ].hash )
+						.scrollIntoView( {
+							behavior: "smooth",
+							block: "start"
+						} );
 					} );
-				} );
+				}
 			}
 		}
-	}
-	const spyScrolling = ( ) => {
-		const sections = document.querySelectorAll( '.nav-section' );
+		const spyScrolling = ( ) => {
+			const sections = document.querySelectorAll( '.nav-section' );
 
-		window.onscroll = ( ) => {
-			
-			const marginPadding = 144
-			const scrollPos = document.documentElement.scrollTop + marginPadding
-			
-			for ( let s in sections )
-				if ( sections.hasOwnProperty( s ) && sections[ s ].offsetTop <= scrollPos ) {
-					const id = sections[ s ].id;
-					document.querySelector( '.active' ).classList.remove( 'active' );
-					document.querySelector( `a[href*=${ id }]` ).classList.add( 'active' );
-				}
-		} 
-	}
+			window.onscroll = ( ) => {
+				
+				const marginPadding = 96
+				const scrollPos = document.documentElement.scrollTop + marginPadding
+				
+				for ( let s in sections )
+					if ( sections.hasOwnProperty( s ) && sections[s].offsetTop <= scrollPos ) {
+						const id = sections[s].id;
+						document.querySelector('.active').classList.remove( 'active' );
+						document.querySelector(`a[href*=${ id }]`).classList.add( 'active' );
+					}
+			} 
+		}
 
-	makeNavLinksSmooth()
-	spyScrolling()
+		makeNavLinksSmooth()
+		spyScrolling()
 
-</script>
-</body>
+	</script>
+	</body>
 </html>

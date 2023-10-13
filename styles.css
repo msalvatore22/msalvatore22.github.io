@@ -1,7 +1,7 @@
 body, html {
   margin: 0;
   padding: 0;
-  font: 100% "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #011621;
   color: rgba(234, 254, 255, 0.8784313725);
   scroll-behavior: smooth;
@@ -18,12 +18,15 @@ a {
   transition: color 300ms;
 }
 
+p {
+  line-height: 1.6;
+}
+
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  max-height: 100vh;
-  padding: 48px 24px;
+  min-height: 100vh;
 }
 
 .columns {
@@ -48,6 +51,7 @@ header .name-nav {
 }
 header .name-nav h1 {
   font-size: 50px;
+  margin-top: -20px;
 }
 header .name-nav h2 {
   font-weight: 200;
@@ -127,12 +131,15 @@ main {
 
 #about {
   color: rgba(216, 251, 255, 0.6745098039);
-  scroll-margin-top: 144px;
+  scroll-margin-top: 96px;
+}
+#about p:first-child {
+  margin-top: 0;
 }
 
 #experience {
   margin-top: 96px;
-  scroll-margin-top: 144px;
+  scroll-margin-top: 96px;
 }
 #experience .resume {
   color: rgba(234, 254, 255, 0.8784313725);
@@ -158,13 +165,16 @@ main {
   border-radius: 10px;
   margin: 20px 0;
   color: rgba(216, 251, 255, 0.6745098039);
-  background-color: rgba(3, 48, 73, 0.2901960784);
-  box-shadow: rgba(3, 114, 155, 0.22) 0px 1px 3px 0px, rgba(3, 114, 155, 0.222) 0px 1px 2px 0px;
+  background-color: #021a27;
+  box-shadow: rgba(16, 76, 105, 0.25) 0px 10px 15px -6px inset;
 }
 .card h4 {
   font-weight: 400;
-  margin: 8px 0;
+  margin: 0 0 8px 0;
   color: rgba(234, 254, 255, 0.8784313725);
+}
+.card p {
+  margin-top: 0;
 }
 .card .experience-date {
   font-size: 0.75rem;
@@ -212,7 +222,15 @@ main {
 
 #projects {
   margin-top: 96px;
-  scroll-margin-top: 144px;
+  scroll-margin-top: 96px;
+}
+
+#created-by {
+  margin-top: 96px;
+  color: rgba(216, 251, 255, 0.6745098039);
+}
+#created-by p {
+  margin-bottom: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
